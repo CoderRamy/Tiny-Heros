@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="OnlineDocButton.cs" company="Exit Games GmbH">
-//   Part of: Pun Cockpit Demo
+//   Part of: Pun Cockpit GameScene
 // </copyright>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
@@ -8,7 +8,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// Open an Url on Pointer Click.

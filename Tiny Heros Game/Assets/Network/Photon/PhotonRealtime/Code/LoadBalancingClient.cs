@@ -262,7 +262,7 @@ namespace Photon.Realtime
     /// An extension of this class should override the methods of the IPhotonPeerListener, as they
     /// are called when the state changes. Call base.method first, then pick the operation or state you
     /// want to react to and put it in a switch-case.
-    /// We try to provide demo to each platform where this api can be used, so lookout for those.
+    /// We try to provide GameScene to each platform where this api can be used, so lookout for those.
     /// </remarks>
     public class LoadBalancingClient : IPhotonPeerListener
     {

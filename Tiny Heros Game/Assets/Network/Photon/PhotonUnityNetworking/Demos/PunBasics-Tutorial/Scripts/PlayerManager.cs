@@ -8,6 +8,7 @@
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Photon.Pun.GameScene.PunBasics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 

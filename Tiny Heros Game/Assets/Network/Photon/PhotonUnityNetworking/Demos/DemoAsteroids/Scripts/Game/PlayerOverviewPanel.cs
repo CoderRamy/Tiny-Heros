@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="PlayerNumbering.cs" company="Exit Games GmbH">
-//   Part of: Asteroid Demo,
+//   Part of: Asteroid GameScene,
 // </copyright>
 // <summary>
 //  Player Overview Panel
@@ -17,7 +17,7 @@ using ExitGames.Client.Photon;
 using Photon.Realtime;
 using Photon.Pun.UtilityScripts;
 
-namespace Photon.Pun.Demo.Asteroids
+namespace Photon.Pun.GameScene.Asteroids
 {
     public class PlayerOverviewPanel : MonoBehaviourPunCallbacks
     {

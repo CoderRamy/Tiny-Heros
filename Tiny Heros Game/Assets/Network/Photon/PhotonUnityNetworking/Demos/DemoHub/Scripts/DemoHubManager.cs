@@ -14,9 +14,9 @@ using UnityEngine.SceneManagement;
 
 using System.Collections.Generic;
 
-using Photon.Pun.Demo.Cockpit;
+using Photon.Pun.GameScene.Cockpit;
 
-namespace Photon.Pun.Demo.Hub
+namespace Photon.Pun.GameScene.Hub
 {
 	public class DemoHubManager : MonoBehaviour {
 
@@ -57,7 +57,7 @@ namespace Photon.Pun.Demo.Hub
 				"DemoBoxes", 
 				new DemoData()
 				{
-					Title = "Demo Boxes",
+					Title = "GameScene Boxes",
 					Description = "Uses ConnectAndJoinRandom script.\n" +
 						"(joins a random room or creates one)\n" +
 						"\n" +
@@ -72,7 +72,7 @@ namespace Photon.Pun.Demo.Hub
 				"DemoWorker", 
 				new DemoData()
 				{
-				Title = "Demo Worker",
+				Title = "GameScene Worker",
 				Description = "Joins the default lobby and shows existing rooms.\n" +
 					"Lets you create or join a room.\n" +
 					"Instantiates an animated character.\n" +
@@ -159,7 +159,7 @@ namespace Photon.Pun.Demo.Hub
 				Title = "RPG Movement",
 				Description = "Demonstrates how to use the PhotonTransformView component to synchronize position updates smoothly using inter- and extrapolation.\n" +
 					"\n" +
-					"This demo also shows how to setup a Mecanim Animator to update animations automatically based on received position updates (without sending explicit animation updates).",
+					"This GameScene also shows how to setup a Mecanim Animator to update animations automatically based on received position updates (without sending explicit animation updates).",
 				Scene = "DemoRPGMovement-Scene"
 				}
 			);
@@ -169,7 +169,7 @@ namespace Photon.Pun.Demo.Hub
 				new DemoData()
 				{
 				Title = "Mecanim Animations",
-				Description = "This demo shows how to use the PhotonAnimatorView component to easily synchronize Mecanim animations.\n" +
+				Description = "This GameScene shows how to use the PhotonAnimatorView component to easily synchronize Mecanim animations.\n" +
 					"\n" +
 					"It also demonstrates another feature of the PhotonTransformView component which gives you more control how position updates are inter-/extrapolated by telling the component how fast the object moves and turns using SetSynchronizedValues().",
 				Scene = "DemoMecanim-Scene"
@@ -180,7 +180,7 @@ namespace Photon.Pun.Demo.Hub
 				"2DGame", 
 				new DemoData()
 				{
-				Title = "2D Game Demo",
+				Title = "2D Game GameScene",
 				Description = "Synchronizes animations, positions and physics in a 2D scene.",
 				Scene = "Demo2DJumpAndRunWithPhysics-Scene"
 				}

@@ -10,7 +10,7 @@
 
 using UnityEngine;
 
-namespace Photon.Pun.Demo.PunBasics
+namespace Photon.Pun.GameScene.PunBasics
 {
 	/// <summary>
 	/// Simple behaviour to animate particles around to create a typical "Ajax Loader". this is actually very important to visual inform the user that something is happening

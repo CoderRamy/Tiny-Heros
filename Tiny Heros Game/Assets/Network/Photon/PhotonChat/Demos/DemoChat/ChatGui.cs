@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="ChatGui.cs" company="Exit Games GmbH">
-//   Part of: PhotonChat demo,
+//   Part of: PhotonChat GameScene,
 // </copyright>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
@@ -24,7 +24,7 @@ using Photon.Pun;
 /// <remarks>
 /// The ChatClient basically lets you create any number of channels.
 ///
-/// some friends are already set in the Chat demo "DemoChat-Scene", 'Joe', 'Jane' and 'Bob', simply log with them so that you can see the status changes in the Interface
+/// some friends are already set in the Chat GameScene "DemoChat-Scene", 'Joe', 'Jane' and 'Bob', simply log with them so that you can see the status changes in the Interface
 ///
 /// Workflow:
 /// Create ChatClient, Connect to a server with your AppID, Authenticate the user (apply a unique name,)
@@ -38,7 +38,7 @@ using Photon.Pun;
 public class ChatGui : MonoBehaviour, IChatClientListener
 {
 
-	public string[] ChannelsToJoinOnConnect; // set in inspector. Demo channels to join automatically.
+	public string[] ChannelsToJoinOnConnect; // set in inspector. GameScene channels to join automatically.
 
 	public string[] FriendsList;
 
@@ -185,14 +185,14 @@ public class ChatGui : MonoBehaviour, IChatClientListener
 			this.chatClient.Service(); // make sure to call this regularly! it limits effort internally, so calling often is ok!
 		}
 
-		// check if we are missing context, which means we got kicked out to get back to the Photon Demo hub.
+		// check if we are missing context, which means we got kicked out to get back to the Photon GameScene hub.
 		if ( this.StateText == null)
 		{
 			Destroy(this.gameObject);
 			return;
 		}
 
-		this.StateText.gameObject.SetActive(this.ShowState); // this could be handled more elegantly, but for the demo it's ok.
+		this.StateText.gameObject.SetActive(this.ShowState); // this could be handled more elegantly, but for the GameScene it's ok.
 	}
 
 
@@ -414,7 +414,7 @@ public class ChatGui : MonoBehaviour, IChatClientListener
 
 	public void OnSubscribed(string[] channels, bool[] results)
 	{
-		// in this demo, we simply send a message into each channel. This is NOT a must have!
+		// in this GameScene, we simply send a message into each channel. This is NOT a must have!
 		foreach (string channel in channels)
 		{
 			this.chatClient.PublishMessage(channel, "says 'hi'."); // you don't HAVE to send a msg on join but you could.

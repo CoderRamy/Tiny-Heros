@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="CreateRoomUiForm.cs" company="Exit Games GmbH">
-//   Part of: Pun Cockpit Demo
+//   Part of: Pun Cockpit GameScene
 // </copyright>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
@@ -15,7 +15,7 @@ using UnityEngine.Events;
 
 using Photon.Realtime;
 
-namespace Photon.Pun.Demo.Cockpit.Forms
+namespace Photon.Pun.GameScene.Cockpit.Forms
 {
     /// <summary>
     /// Create room user interface form.

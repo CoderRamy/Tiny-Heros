@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 using System.Linq;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
 
     /// <summary>

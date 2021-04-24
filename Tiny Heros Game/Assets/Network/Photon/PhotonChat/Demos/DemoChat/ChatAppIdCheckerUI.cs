@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="ChatAppIdCheckerUI.cs" company="Exit Games GmbH">
-//   Part of: PhotonChat demo, 
+//   Part of: PhotonChat GameScene, 
 // </copyright>                                                                                             
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------

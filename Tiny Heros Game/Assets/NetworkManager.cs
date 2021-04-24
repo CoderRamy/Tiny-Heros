@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Realtime;
 using Photon.Pun;
-using Photon.Pun.Demo.PunBasics;
+using Photon.Pun.GameScene.PunBasics;
+using TMPro;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
@@ -16,7 +17,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
 	[Tooltip("The Ui Text to inform the user about the connection progress")]
 	[SerializeField]
-	private Text feedbackText;
+	private TMP_Text feedbackText;
 
 	[Tooltip("The maximum number of players per room")]
 	[SerializeField]
@@ -27,7 +28,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 	private LoaderAnime loaderAnime;
 
 	[SerializeField]
-	string gameScene = "GameScene";
+	string GameScene = "GameScene";
 
 	#endregion
 
@@ -83,7 +84,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 		isConnecting = true;
 
 		// hide the Play button for visual consistency
-		controlPanel.SetActive(false);
+		//controlPanel.SetActive(false);
 
 		// start the loader animation for visual effect.
 		if (loaderAnime != null)
@@ -179,7 +180,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 		loaderAnime.StopLoaderAnimation();
 
 		isConnecting = false;
-		controlPanel.SetActive(true);
+		//controlPanel.SetActive(true);
 
 	}
 
@@ -206,7 +207,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
 			// #Critical
 			// Load the Room Level. 
-			PhotonNetwork.LoadLevel(gameScene);
+			PhotonNetwork.LoadLevel(GameScene);
 
 		}
 	}

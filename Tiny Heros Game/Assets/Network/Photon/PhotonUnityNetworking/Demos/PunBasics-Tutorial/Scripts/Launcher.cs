@@ -13,7 +13,7 @@ using UnityEngine.UI;
 
 using Photon.Realtime;
 
-namespace Photon.Pun.Demo.PunBasics
+namespace Photon.Pun.GameScene.PunBasics
 {
 	#pragma warning disable 649
 

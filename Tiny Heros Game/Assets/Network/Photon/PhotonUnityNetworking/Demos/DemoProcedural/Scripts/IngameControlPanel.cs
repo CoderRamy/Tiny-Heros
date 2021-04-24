@@ -3,7 +3,7 @@ using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Photon.Pun.Demo.Procedural
+namespace Photon.Pun.GameScene.Procedural
 {
     /// <summary>
     /// The Ingame Control Panel basically controls the WorldGenerator.

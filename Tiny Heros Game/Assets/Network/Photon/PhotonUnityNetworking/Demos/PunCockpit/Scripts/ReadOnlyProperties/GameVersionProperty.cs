@@ -8,7 +8,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
 	/// <summary>
 	/// PhotonNetwork.GameVersion UI property.

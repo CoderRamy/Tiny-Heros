@@ -15,7 +15,7 @@ using Photon.Realtime;
 using Photon.Pun.UtilityScripts;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// Controller for the Playerdetails UI view

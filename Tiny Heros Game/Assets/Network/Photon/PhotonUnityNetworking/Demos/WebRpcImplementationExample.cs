@@ -12,7 +12,7 @@ using ExitGames.Client.Photon;
 using Photon.Realtime;
 using UnityEngine;
 
-namespace Photon.Pun.Demo
+namespace Photon.Pun.GameScene
 {
 
     /// <summary>

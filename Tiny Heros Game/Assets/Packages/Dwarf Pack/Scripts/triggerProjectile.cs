@@ -9,16 +9,37 @@ public class triggerProjectile : MonoBehaviour {
 	private GameObject magicMissile;
 	public float attackLenght;
 	public float attackRange;
+	public float attackHight;
 
 	public GameObject hitEffect;
 
 	public GameObject hideObject;
 
-	public void shoot()
+	public Transform Target;
+
+
+
+    public void shoot()
 	{
-		magicMissile = Instantiate(projectile, shootPoint.position, transform.rotation) as GameObject;
-	
-		StartCoroutine(lerpyLoop(magicMissile));
+		RaycastHit hit;
+
+		if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
+		{
+			if (hit.collider.gameObject.tag == "Player" && hit.transform != transform.parent)
+            {
+				Target = hit.transform;
+
+				attackRange = Vector3.Distance(transform.parent.position, Target.position);
+
+				transform.parent.LookAt(Target);
+
+				magicMissile = Instantiate(projectile, shootPoint.position, transform.rotation) as GameObject;
+
+				StartCoroutine(lerpyLoop(magicMissile));
+			}
+				
+		}
+
 	}
 
 	// shoot loop
@@ -28,8 +49,9 @@ public class triggerProjectile : MonoBehaviour {
 			hideObject.SetActive(false);
 
 
-		var victim = transform.position + transform.forward * attackRange;
+		//var victim = transform.position + transform.forward * attackRange;
 
+		var victim = Target.position + transform.forward * attackRange;
 		float progress = 0;
 		float timeScale = 1.0f / attackLenght;
 		Vector3 origin = projectileInstance.transform.position;
@@ -40,8 +62,8 @@ public class triggerProjectile : MonoBehaviour {
 			if (projectileInstance)
 			{			
 			progress += timeScale * Time.deltaTime;
-			float ypos = (progress - Mathf.Pow(progress, 2)) * 12;
-			float ypos_b = ((progress + 0.1f) - Mathf.Pow((progress + 0.1f), 2)) * 12;
+			float ypos = (progress - Mathf.Pow(progress, 2)) * attackHight;
+			float ypos_b = ((progress + 0.1f) - Mathf.Pow((progress + 0.1f), 2)) * attackHight;
 			projectileInstance.transform.position = Vector3.Lerp(origin, victim, progress) + new Vector3(0, ypos, 0);
 			if (progress < 0.9f)
 			{

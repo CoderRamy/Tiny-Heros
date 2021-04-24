@@ -15,7 +15,7 @@ using UnityEngine.SceneManagement;
 
 using Photon.Pun.UtilityScripts;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// Use this in scenes you want to leave Control for connection and pun related commands to Cockpit.

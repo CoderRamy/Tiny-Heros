@@ -3,7 +3,7 @@
 //   Part of: Photon Unity Networking Demos
 // </copyright>
 // <summary>
-//  Used in SlotRacer Demo
+//  Used in SlotRacer GameScene
 // </summary>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
@@ -17,10 +17,10 @@ using UnityEditor;
 #endif
 
 
-namespace Photon.Pun.Demo.SlotRacer
+namespace Photon.Pun.GameScene.SlotRacer
 {
     /// <summary>
-    /// Slot racer splash screen. Inform about the slotRacer demo and the Cockpit control setup
+    /// Slot racer splash screen. Inform about the slotRacer GameScene and the Cockpit control setup
     /// Gets deleted as soon as the scene plays
     /// </summary>
     [ExecuteInEditMode]
@@ -73,7 +73,7 @@ namespace Photon.Pun.Demo.SlotRacer
 
                 if (_found && !_enabled)
                 {
-                    this.WarningText.text = "<Color=Green>INFORMATION:</Color>\nThis demo can run with the PunCockpit Scene." +
+                    this.WarningText.text = "<Color=Green>INFORMATION:</Color>\nThis GameScene can run with the PunCockpit Scene." +
                                             "\nFor this, the Scene '" +
                                             this.PunCockpit_scene +
                                             "' needs to be enabled to the build settings." +
@@ -83,7 +83,7 @@ namespace Photon.Pun.Demo.SlotRacer
 
                 if (!_found)
                 {
-                    this.WarningText.text = "<Color=Green>INFORMATION:</Color>\nThis demo can run with the PunCockpit Scene." +
+                    this.WarningText.text = "<Color=Green>INFORMATION:</Color>\nThis GameScene can run with the PunCockpit Scene." +
                                             "\n For this, the Scene '" +
                                             this.PunCockpit_scene +
                                             "' needs to be added to the build settings." +

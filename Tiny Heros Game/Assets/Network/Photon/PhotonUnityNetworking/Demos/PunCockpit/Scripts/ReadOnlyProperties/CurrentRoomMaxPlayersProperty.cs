@@ -7,7 +7,7 @@
 
 using UnityEngine.UI;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// PhotonNetwork.CurrentRoom.MaxPlayers UI property.

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-namespace Photon.Pun.Demo.Procedural
+namespace Photon.Pun.GameScene.Procedural
 {
     /// <summary>
     /// Describes the Size of the World.
@@ -185,7 +185,7 @@ namespace Photon.Pun.Demo.Procedural
         /// </summary>
         private IEnumerator GenerateWorld()
         {
-            Debug.Log(string.Format("<b>Procedural Demo</b>: Creating world using Seed: {0}, World Size: {1}, Cluster Size: {2} and World Type: {3}", Seed, WorldSize, ClusterSize, WorldType));
+            Debug.Log(string.Format("<b>Procedural GameScene</b>: Creating world using Seed: {0}, World Size: {1}, Cluster Size: {2} and World Type: {3}", Seed, WorldSize, ClusterSize, WorldType));
 
             Simplex.Noise.Seed = Seed;
 

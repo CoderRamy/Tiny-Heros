@@ -15,7 +15,7 @@ using System.Collections.Generic;
 
 using Photon.Realtime;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// Player list UI View.

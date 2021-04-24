@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Asteroid.cs" company="Exit Games GmbH">
-//   Part of: Asteroid Demo
+//   Part of: Asteroid GameScene
 // </copyright>
 // <summary>
 //  Asteroid Component
@@ -13,7 +13,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using Photon.Pun.UtilityScripts;
 
-namespace Photon.Pun.Demo.Asteroids
+namespace Photon.Pun.GameScene.Asteroids
 {
     public class Asteroid : MonoBehaviour
     {

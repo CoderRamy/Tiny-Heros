@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="SetRoomCustomPropertyUIForm.cs" company="Exit Games GmbH">
-//   Part of: Pun Cockpit Demo
+//   Part of: Pun Cockpit GameScene
 // </copyright>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
@@ -11,7 +11,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-namespace Photon.Pun.Demo.Cockpit.Forms
+namespace Photon.Pun.GameScene.Cockpit.Forms
 {
     /// <summary>
     /// Level Loading UI Form.

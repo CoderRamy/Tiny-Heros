@@ -3,7 +3,7 @@
 //   Part of: Photon Unity Networking Demos
 // </copyright>
 // <summary>
-//  Used in SlotRacer Demo
+//  Used in SlotRacer GameScene
 // </summary>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
@@ -12,10 +12,10 @@ using UnityEngine;
 
 using System.Collections;
 
-using Photon.Pun.Demo.SlotRacer.Utils;
+using Photon.Pun.GameScene.SlotRacer.Utils;
 using Photon.Pun.UtilityScripts;
 
-namespace Photon.Pun.Demo.SlotRacer
+namespace Photon.Pun.GameScene.SlotRacer
 {
     /// <summary>
     /// Player control. 

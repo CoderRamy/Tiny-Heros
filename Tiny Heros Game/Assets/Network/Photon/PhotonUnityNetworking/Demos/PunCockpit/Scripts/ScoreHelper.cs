@@ -8,7 +8,7 @@ using UnityEngine;
 using Photon.Pun.UtilityScripts;
 
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
 
     public class ScoreHelper : MonoBehaviour

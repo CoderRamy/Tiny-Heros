@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Photon.Pun.Demo.Procedural
+namespace Photon.Pun.GameScene.Procedural
 {
     /// <summary>
     /// The Block component is attach to each instantiated Block at runtime.

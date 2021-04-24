@@ -170,7 +170,7 @@ namespace Photon.Pun.UtilityScripts
                 EditorGUILayout.BeginHorizontal();
                 if (GUILayout.Button("Open the tutorial"))
                 {
-                    Application.OpenURL("https://doc.photonengine.com/en-us/pun/v2/demos-and-tutorials/package-demos/culling-demo");
+                    Application.OpenURL("https://doc.photonengine.com/en-us/pun/v2/demos-and-tutorials/package-demos/culling-GameScene");
                 }
                 if (GUILayout.Button("Take me to the forums"))
                 {

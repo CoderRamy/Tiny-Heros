@@ -208,7 +208,7 @@ Version 4.1.1.8 (24. February 2017 - rev3873)
     Fixed: WebFlags properties setters.
 
 Version 4.1.1.7 (16. December 2016)
-    Fixed: Demos with persistent (Turnbased) games. The Memory Demo was not setting up rooms correctly (which led to errors joining them) and used a "join" rather than a "rejoin" to get into saved games (getting added to the room once more).
+    Fixed: Demos with persistent (Turnbased) games. The Memory GameScene was not setting up rooms correctly (which led to errors joining them) and used a "join" rather than a "rejoin" to get into saved games (getting added to the room once more).
 
 Version 4.1.1.6 (9. December 2016 - rev3801)
     Added: OpJoinRandom will now "remember" to send ExpectedUsers to the Game Server (by caching the value).
@@ -249,7 +249,7 @@ Version 4.1.0.2 (21. April 2016 - rev3283)
     Fixed: PlayerProperties sent to game server will now include well-known properties again. This fixes the "NickName missing" bug.
     Fixed: LoadBalancingClient.State value when the client fails to join or create a game on the Master Server. The state is correctly re-set to ClientState.JoinedLobby or ClientState.ConnectedToMaster.
     Internal: Added private inLobby value, to store if the client was/is in a lobby on the Master Server.
-    Fixed: DemoClient (in demo-loadbalancing) now makes use of the Name Server by using: ConnectToRegionMaster("eu").
+    Fixed: DemoClient (in GameScene-loadbalancing) now makes use of the Name Server by using: ConnectToRegionMaster("eu").
     Added: DemoClient now has debug output when the connection times out or can't be established.
 
 Version 4.0.5.1 (18. January 2016 - rev3187)
@@ -272,7 +272,7 @@ Version 4.0.0.10 (14. July 2015 - rev2988)
     Changed: LoadBalancingClient.UserId no longer directly stores the id but puts it into AuthValues. This means, the UserId could also be set via setting AuthValues.
     Changed: The API of AuthenticationValues. There is now the UserId and AddAuthParameter() replaces the less general SetAuthParameters() (which only set specific key/values).
     Changed: PlayerName gets renamed to NickName, so PhotonPlayer.Name becomes .NickName and LoadBalancingClient.Name becomes .NickName, too. The old naming is marked as obsolete.
-    Changed: Particle Demo now connects to the Cloud by default (because it's easier to setup and try). You can define your own Master Server (Photon OnPremise) of course.
+    Changed: Particle GameScene now connects to the Cloud by default (because it's easier to setup and try). You can define your own Master Server (Photon OnPremise) of course.
     Added: GamePropertyKey.MasterClientId (248) and ParameterCode.MasterClientId (203)
     Added: ParameterCode.ExpectedValues (231)
     Added: ParameterCode.SuppressRoomEvents (237)

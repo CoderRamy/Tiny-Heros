@@ -37,16 +37,27 @@ public class GameManager : MonoBehaviourPunCallbacks
         [SerializeField]
         private GameObject playerPrefab;
 
-        #endregion
+	[SerializeField]
+	private Transform[] RandomSpwanPoints;
 
-        #region MonoBehaviour CallBacks
+    #endregion
 
-        /// <summary>
-        /// MonoBehaviour method called on GameObject by Unity during initialization phase.
-        /// </summary>
-        void Start()
+    #region MonoBehaviour CallBacks
+
+
+    public void Awake()
+    {
+		playerPrefab = GameObject.Find("SelectedCharacter").GetComponent<SelectCharacter>().SelectedCharacter;
+
+	}
+
+	/// <summary>
+	/// MonoBehaviour method called on GameObject by Unity during initialization phase.
+	/// </summary>
+	void Start()
 		{
-			Instance = this;
+ 
+		    Instance = this;
 
 			// in case we started this demo with the wrong scene being active, simply load the menu scene
 			if (!PhotonNetwork.IsConnected)
@@ -62,12 +73,13 @@ public class GameManager : MonoBehaviourPunCallbacks
 			} else {
 
 
-				if (PlayerOnlineManager.LocalPlayerInstance==null)
+				if (PlayerOnlineManager.LocalPlayerInstance == null)
 				{
 				    Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
 
-					// we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-					PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
+			    	// we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
+				    var RandomPoints = Random.Range(0, RandomSpwanPoints.Length);
+					PhotonNetwork.Instantiate(this.playerPrefab.name, RandomSpwanPoints[RandomPoints].position, Quaternion.identity, 0);
 				}else{
 
 					Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);

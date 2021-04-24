@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Photon.Pun.Demo.Asteroids
+namespace Photon.Pun.GameScene.Asteroids
 {
     public class AsteroidsGame
     {

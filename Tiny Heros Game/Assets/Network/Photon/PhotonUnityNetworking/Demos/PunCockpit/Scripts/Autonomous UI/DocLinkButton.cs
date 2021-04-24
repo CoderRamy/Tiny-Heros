@@ -5,11 +5,11 @@
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
 
-using Photon.Pun.Demo.Shared;
+using Photon.Pun.GameScene.Shared;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// Open an Url on Pointer Click.

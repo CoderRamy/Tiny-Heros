@@ -82,7 +82,7 @@ Version 4.0.0.11 (28. October 2015 - rev3093)
     Added: More helpful error logging.
 
 Version 4.0.0.10 (14. July 2015 - rev2988)
-    Added: A Unity 4.6 demo with uGUI. It's missing a few features but should give you a good start to making your own.
+    Added: A Unity 4.6 GameScene with uGUI. It's missing a few features but should give you a good start to making your own.
     Added: Unity/WebGL support (merged from PUN).
     Added: Breaking! IChatClientListener.DebugReturn(). Photon lib and chat client log via this method (no logging to console by default).
     Changed: ChatClient.CustomAuthenticationValues is now .AuthValues. You can use those values to identify a user, even if you don't setup an external, custom authentication service.
@@ -102,7 +102,7 @@ Version 4.0.0.1 (17. June 2014 - rev2663)
     Changed: Folder for Chat API. It now begins with "Photon" which provides some context no matter where you copy the files. Easier to find in Unity projects.
     Changed: Operation FriendList and method SendFriendList renamed to AddFriends
     Added: Operation RemoveFriends and corresponding method in ChatClient.cs
-    Added: Console Demo has new command 'fr' to remove friends
+    Added: Console GameScene has new command 'fr' to remove friends
 
 Version 4.0.0.0 (23. May 2014 - rev2614)
     Added: SendPrivateMessage() overload that has option to encrypt private messages. Public messages don't need encryption.

@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 using Photon.Realtime;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// PhotonNetwork.CountOfPlayersOnMaster UI property.

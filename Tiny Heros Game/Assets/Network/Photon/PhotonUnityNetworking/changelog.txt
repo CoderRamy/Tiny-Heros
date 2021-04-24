@@ -65,7 +65,7 @@ v2.20 (03. August 2020)
 Fixed: Potential cause for NetworkingClient being null in Editor on enter playmode. The EditorApplication.isPlaying value has a race condition.
 Fixed: Edge case where ownershipCacheIsValid was not getting correctly updated for leaving players when Cleanup is disabled.
 Added: CustomContext for PhotonWizard AccountService creation.
-Added: Some additional Standard Assets for third person demos (For SNS overlap with existing demo).
+Added: Some additional Standard Assets for third person demos (For SNS overlap with existing GameScene).
 Note: ThirdPerson scripts namespace changed to avoid conflicts with Unity Standard Assets they are taken from.
 Added: "Chat Extended" features. Properties for public channels and users. Event OnErrorInfo. Wrapped in compile define.
 Added: Additional method for finding nested components. Used by SNS.
@@ -126,7 +126,7 @@ Fixed: String serialization issue in the Photon3Unity3d.dll (v4.1.4.0). Updated 
 v2.18 (28. April 2020)
 Fixed: Support for Unity 2019.3. As Unity 2020 is still beta, there may be more import / build issues. Please report via mail.
 Note: We noticed upgrading projects may create more than one PhotonServerSettings file. If your AppId seems gone, look up these files and keep the one with settings.
-Fixed: Asteroid Demo bullet instantation uses the position sent via the rpc, instead of the current local position.
+Fixed: Asteroid GameScene bullet instantation uses the position sent via the rpc, instead of the current local position.
 Updated: Nicer format for the countdown utility script to avoid floating points.
 Fixed: NullReferenceExceptions in PhotonTeamsManager.OnPlayerEnteredRoom and PhotonTeamsManager.OnPlayerLeftRoom.
 Added: PhotonTeamsManager.GetTeamMembersCount which is a helper method to get size of teams directly.
@@ -331,7 +331,7 @@ Updated: Photon3Unity3d.dll library to rev4954.
 v2.5 (20th November 2018)
 Fixed: The RoomOption CleanupCacheOnLeave is now correctly set per room (if set for creation of the room). This bug caused a server-side cleanup of Instantiate-events, buffered RPCs and other buffered events, despite a different setting in the options. This messed with a game's state, if you wanted to keep networked objects when players leave.
 Fixed: Regression during PhotoView cleanup leading to loss of viewId in OnDisable and OnDestroy calls. Now OnDisable and OnDestroy can access the viewID. Pooling the game object will set the new viewID before OnEnable is called.
-Fixed: Asteroids Demo. The cached room list now gets cleared correctly when the client joins a room / leaves the lobby.
+Fixed: Asteroids GameScene. The cached room list now gets cleared correctly when the client joins a room / leaves the lobby.
 Added: The component "PhotonTransformViewClassic", which provides all the options (and implementation) from PUN Classic (1.xy). Use this if you want to use the options that were previously available. This component is deliberately not used by default.
 Changed: The inspector for PhotonTransformView to hint about the PhotonTransformViewClassic and using your own synchronization in general.
 Changed: PUN now suppresses the compiler warning "649" on newer versions of Unity for some of our Basics Tutorial scripts. This helps us keep the used code simple and better at "teaching" PUN.
@@ -359,14 +359,14 @@ Fixed: When using the 4.x mono runtime in Unity, the Socket.Receive method could
 Changed: Enum DisconnectCause. Replace TimeoutDisconnect with ClientTimeout. Replace DisconnectByServer with ServerTimeout. Replace DisconnectByServerUserLimit with MaxCcuReached.
 Added: Enum DisconnectCause.DisconnectByServerReasonUnknown for the case it's neither a ccu-limit, timeout nor a disconnect by the room's logic.
 Changed: Warning-dialog "AppId not set" is not shown, if the configuration points to a Master Server (Photon OnPremise). When the new server SDK expects an AppId, too, this could be reverted.
-Updated: Cockpit demo scene to expose automaticallySyncLevel and load level form. Updated links to docs.
+Updated: Cockpit GameScene scene to expose automaticallySyncLevel and load level form. Updated links to docs.
 Updated: The readme.txt.
 Updated: The Photon3Unity3d.dll to v4.1.2.2, which has a few changes. See release_history.txt.
 
 v2.2  (27th September 2018)
 Added: Assembly Definitions for Unity 2017.3 and up. PUN, Realtime, Chat, the WebSocket folder and some Editor classes are now assemblies and will recompile less frequently.
-Added: Chat Demo. An updated version of the UI from PUN Classic.
-Fixed: PunCockpit integration fixed, scene camera was not set properly. This fixes the black screen over any demo which uses the cockpit.
+Added: Chat GameScene. An updated version of the UI from PUN Classic.
+Fixed: PunCockpit integration fixed, scene camera was not set properly. This fixes the black screen over any GameScene which uses the cockpit.
 Fixed: OnCustomAuthenticationFailed() was not virtual in MonoBehaviourPunCallbacks. Now it is and you can override it.
 Changed: Custom editor for PhotonServerSettings, which hides AppIdVoice and AppIdChat when the APIs are not present in a project.
 Removed: PhotonNetwork.InstantiateInRoomOnly. If you need to instantiate game objects before getting into a room, assign a PhotonView and PhotonView.viewID, when you arrive in a room.
@@ -385,11 +385,11 @@ Removed: PhotonNetwork.ObjectPool value. Use PrefabPool to set a new pool.
 Removed: UnAllocateViewID(). You no longer have to return any viewIDs, not even manually allocated ones.
 Changed: SendInstantiate and ServerCleanInstantiateAndDestroy (called by an object's Destroy) now reuse their Hashtables for the events and the RaiseEventOptions. This reduces GC.
 Changed: Internally, PUN stores which prefabs don't implement IPunInstantiateMagicCallback. This avoids calling GetComponents more than once in best case.
-Changed: The Asteroids demo caches a list of available rooms now.
+Changed: The Asteroids GameScene caches a list of available rooms now.
 
 v2.0.1  (4th September 2018)
-Updated: Asteroids Demo. Fixed room listing, player listing, the ready-button and the countdown for ship instantiation.
-Added: A "teleport" setting to the PhotonRigidbody2DView and PhotonRigidbodyView. With this, you can implement teleporting as done in the Asteroids Demo.
+Updated: Asteroids GameScene. Fixed room listing, player listing, the ready-button and the countdown for ship instantiation.
+Added: A "teleport" setting to the PhotonRigidbody2DView and PhotonRigidbodyView. With this, you can implement teleporting as done in the Asteroids GameScene.
 Changed: When the PhotonServerSettings point to a Master Server, ConnectUsingSettings() will re-set the serialization protocol (SerializationProtocolType) to be compatible with the Photon Server SDK.
 
 v2.0  (7th August 2018)

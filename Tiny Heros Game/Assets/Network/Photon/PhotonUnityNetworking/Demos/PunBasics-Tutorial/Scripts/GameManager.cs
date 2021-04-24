@@ -12,8 +12,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 using Photon.Realtime;
+using Photon.Pun.Demo.PunBasics;
 
-namespace Photon.Pun.Demo.PunBasics
+namespace Photon.Pun.GameScene.PunBasics
 {
 	#pragma warning disable 649
 
@@ -51,7 +52,7 @@ namespace Photon.Pun.Demo.PunBasics
 		{
 			Instance = this;
 
-			// in case we started this demo with the wrong scene being active, simply load the menu scene
+			// in case we started this GameScene with the wrong scene being active, simply load the menu scene
 			if (!PhotonNetwork.IsConnected)
 			{
 				SceneManager.LoadScene("PunBasics-Launcher");

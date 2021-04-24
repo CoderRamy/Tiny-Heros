@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 using Photon.Realtime;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// Friend list cell

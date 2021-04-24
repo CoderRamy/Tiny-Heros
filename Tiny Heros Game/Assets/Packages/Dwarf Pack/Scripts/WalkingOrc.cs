@@ -4,14 +4,15 @@ using Photon.Pun;
 
 public class WalkingOrc : MonoBehaviourPunCallbacks
 {
-
+	
 	private Animator animator;
 
 	public float walkspeed = 5;
 	private float horizontal;
 	private float vertical;
 	private float rotationDegreePerSecond = 1000;
-	private bool isAttacking = false;
+	[HideInInspector]
+	public bool isAttacking = false;
 
 	public GameObject gamecam;
 	public Vector2 camPosition;
@@ -21,6 +22,9 @@ public class WalkingOrc : MonoBehaviourPunCallbacks
 	public GameObject[] characters;
 	public int currentChar = 0;
 
+	public AttackType attackType;
+	private Transform Target;
+
 
 	void Start()
 	{
@@ -29,12 +33,12 @@ public class WalkingOrc : MonoBehaviourPunCallbacks
 
 	void FixedUpdate()
 	{
-		if (photonView.IsMine)
-		{
-			gamecam = GameManager.FindObjectOfType<Camera>().gameObject;
-		}
+        if (photonView.IsMine)
+        {
+            gamecam = GameManager.FindObjectOfType<Camera>().gameObject;
+        }
 
-		if (animator && !dead)
+        if (animator && !dead)
 		{
 			//walk
 			horizontal = Input.GetAxis("Horizontal");
@@ -71,11 +75,30 @@ public class WalkingOrc : MonoBehaviourPunCallbacks
 
 			if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") && !isAttacking)
 			{
-				isAttacking = true;
-				//animator.Play("Attack");
-				animator.SetTrigger("Attack");
-				StartCoroutine(stopAttack(1));
-				activateTrails(true);
+				if(attackType == AttackType.Ranged)
+                {
+					RaycastHit hit;
+					if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
+					{
+						if (hit.collider.gameObject.tag == "Player" && hit.transform != transform)
+						{
+							isAttacking = true;
+							//animator.Play("Attack");
+							animator.SetTrigger("Attack");
+							StartCoroutine(stopAttack(1));
+							activateTrails(true);
+						}
+
+					}
+                }
+                else
+                {
+					isAttacking = true;
+					//animator.Play("Attack");
+					animator.SetTrigger("Attack");
+					StartCoroutine(stopAttack(1));
+					activateTrails(true);
+				}
 			}
 
 			animator.SetBool("isAttacking", isAttacking);
@@ -154,4 +177,10 @@ public class WalkingOrc : MonoBehaviourPunCallbacks
 			tt.enabled = state;
 		}
 	}
+}
+
+public enum AttackType
+{
+	Melee = 0,
+	Ranged,
 }

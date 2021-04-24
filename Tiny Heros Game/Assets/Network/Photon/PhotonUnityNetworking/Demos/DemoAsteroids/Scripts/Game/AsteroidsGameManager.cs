@@ -1,9 +1,9 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="AsteroidsGameManager.cs" company="Exit Games GmbH">
-//   Part of: Asteroid demo
+//   Part of: Asteroid GameScene
 // </copyright>
 // <summary>
-//  Game Manager for the Asteroid Demo
+//  Game Manager for the Asteroid GameScene
 // </summary>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ using Photon.Realtime;
 using Photon.Pun.UtilityScripts;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-namespace Photon.Pun.Demo.Asteroids
+namespace Photon.Pun.GameScene.Asteroids
 {
     public class AsteroidsGameManager : MonoBehaviourPunCallbacks
     {

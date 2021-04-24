@@ -3,16 +3,16 @@
 //   Part of: Photon Unity Networking Demos
 // </copyright>
 // <summary>
-//  Used in SlotRacer Demo
+//  Used in SlotRacer GameScene
 // </summary>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
 
 using UnityEngine;
 
-using Photon.Pun.Demo.SlotRacer.Utils;
+using Photon.Pun.GameScene.SlotRacer.Utils;
 
-namespace Photon.Pun.Demo.SlotRacer
+namespace Photon.Pun.GameScene.SlotRacer
 {
 	/// <summary>
 	/// Define Slot lanes and grid positions placeholders.

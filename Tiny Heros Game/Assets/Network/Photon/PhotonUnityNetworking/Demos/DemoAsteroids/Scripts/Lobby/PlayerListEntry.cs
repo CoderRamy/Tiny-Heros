@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="PlayerListEntry.cs" company="Exit Games GmbH">
-//   Part of: Asteroid Demo,
+//   Part of: Asteroid GameScene,
 // </copyright>
 // <summary>
 //  Player List Entry
@@ -15,7 +15,7 @@ using ExitGames.Client.Photon;
 using Photon.Realtime;
 using Photon.Pun.UtilityScripts;
 
-namespace Photon.Pun.Demo.Asteroids
+namespace Photon.Pun.GameScene.Asteroids
 {
     public class PlayerListEntry : MonoBehaviour
     {

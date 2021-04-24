@@ -3,7 +3,7 @@
 //   Part of: Photon Unity Demos
 // </copyright>
 // <summary>
-//  Present a button on all launched demos from hub to allow getting back to the demo hub.
+//  Present a button on all launched demos from hub to allow getting back to the GameScene hub.
 // </summary>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
@@ -12,10 +12,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-namespace Photon.Pun.Demo.Hub
+namespace Photon.Pun.GameScene.Hub
 {
 	/// <summary>
-	/// Present a button on all launched demos from hub to allow getting back to the demo hub.
+	/// Present a button on all launched demos from hub to allow getting back to the GameScene hub.
 	/// </summary>
 	public class ToDemoHubButton : MonoBehaviour
 	{

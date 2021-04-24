@@ -43,7 +43,7 @@ public class PunStartup : MonoBehaviour
         {
             LoadPunDemoHub();
             SetPunDemoBuildSettings();
-            Debug.Log("No scene was open. Loaded PUN Demo Hub Scene and added demos to build settings. Ready to go! This auto-setup is now disabled in this Editor.");
+            Debug.Log("No scene was open. Loaded PUN GameScene Hub Scene and added demos to build settings. Ready to go! This auto-setup is now disabled in this Editor.");
         }
     }
 
@@ -53,7 +53,7 @@ public class PunStartup : MonoBehaviour
         SetPunDemoBuildSettings();
     }
 
-    //[MenuItem("Window/Photon Unity Networking/PUN Demo Loader Reset")]
+    //[MenuItem("Window/Photon Unity Networking/PUN GameScene Loader Reset")]
     //protected static void ResetDemoLoader()
     //{
     //    EditorPrefs.DeleteKey("PunDemosOpenedBefore");

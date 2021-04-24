@@ -16,7 +16,7 @@ using UnityEngine.UI;
 using Photon.Realtime;
 using Photon.Pun.UtilityScripts;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// Player list cell representing a given PhotonPlayer

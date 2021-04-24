@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Spaceship.cs" company="Exit Games GmbH">
-//   Part of: Asteroid Demo,
+//   Part of: Asteroid GameScene,
 // </copyright>
 // <summary>
 //  Spaceship
@@ -15,7 +15,7 @@ using UnityEngine;
 using Photon.Pun.UtilityScripts;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-namespace Photon.Pun.Demo.Asteroids
+namespace Photon.Pun.GameScene.Asteroids
 {
     public class Spaceship : MonoBehaviour
     {

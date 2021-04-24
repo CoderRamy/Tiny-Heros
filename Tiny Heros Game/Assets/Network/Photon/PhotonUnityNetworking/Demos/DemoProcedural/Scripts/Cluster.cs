@@ -4,7 +4,7 @@ using UnityEngine;
 
 using ExitGames.Client.Photon;
 
-namespace Photon.Pun.Demo.Procedural
+namespace Photon.Pun.GameScene.Procedural
 {
     /// <summary>
     /// The Cluster component has references to all Blocks that are part of this Cluster.

@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="PunCockpit.cs" company="Exit Games GmbH">
-//   Part of: Pun Cockpit Demo
+//   Part of: Pun Cockpit GameScene
 // </copyright>
 // <author>developer@exitgames.com</author>
 // --------------------------------------------------------------------------------------------------------------------
@@ -13,12 +13,12 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-using Photon.Pun.Demo.Cockpit.Forms;
-using Photon.Pun.Demo.Shared;
+using Photon.Pun.GameScene.Cockpit.Forms;
+using Photon.Pun.GameScene.Shared;
 using Photon.Realtime;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-namespace Photon.Pun.Demo.Cockpit
+namespace Photon.Pun.GameScene.Cockpit
 {
     /// <summary>
     /// UI based work in progress to test out api and act as foundation when dealing with room, friends and player list
@@ -37,7 +37,7 @@ namespace Photon.Pun.Demo.Cockpit
         public Text StateText; // set in inspector
         public Text UserIdText; // set in inspector
 
-        [Header("Demo Integration")]
+        [Header("GameScene Integration")]
 
         public CanvasGroup MinimalCanvasGroup;
         public CanvasGroup MaximalCanvasGroup;

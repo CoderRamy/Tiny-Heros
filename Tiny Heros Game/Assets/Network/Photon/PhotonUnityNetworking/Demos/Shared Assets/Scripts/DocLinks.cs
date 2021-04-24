@@ -7,7 +7,7 @@
 
 using System.Collections.Generic;
 
-namespace Photon.Pun.Demo.Shared
+namespace Photon.Pun.GameScene.Shared
 {
 	/// <summary>
 	/// Document links.

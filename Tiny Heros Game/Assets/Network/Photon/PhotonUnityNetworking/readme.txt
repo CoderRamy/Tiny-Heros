@@ -1,7 +1,7 @@
 
 Photon Unity Networking (PUN)
     This package includes the Photon Unity Networking Api, the Realtime Api (on which PUN is based) and other optional Photon APIs.
-    Also included: A setup wizard, demo scenes, documentation and Editor extensions.
+    Also included: A setup wizard, GameScene scenes, documentation and Editor extensions.
 
 
 PUN Free versus PUN+
@@ -25,7 +25,7 @@ Integration
         Menu -> Window -> Photon Unity Networking (shortcut: ALT+P)
     It also adds a commonly used component "PhotonView" to this menu:
         Menu -> Component -> Miscellaneous -> PhotonView (shortcut: ALT+V)
-    When imported into a new, empty project, the "PunStartup" script opens the "demo hub" and setup scenes to build.
+    When imported into a new, empty project, the "PunStartup" script opens the "GameScene hub" and setup scenes to build.
 
 
 Clean PUN Import (no demos)
@@ -73,4 +73,4 @@ Important Files
 
     Demos
         All demos are in separate folders in Photon\PhotonUnityNetworking\Demos\. Delete this folder in your projects.
-        Each has a Demo<name>-Scene.
+        Each has a GameScene<name>-Scene.

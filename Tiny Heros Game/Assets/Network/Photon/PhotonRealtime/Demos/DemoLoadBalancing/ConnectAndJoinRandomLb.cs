@@ -3,7 +3,7 @@ using ExitGames.Client.Photon;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Photon.Realtime.Demo
+namespace Photon.Realtime.GameScene
 {
     public class ConnectAndJoinRandomLb : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks, ILobbyCallbacks
     {

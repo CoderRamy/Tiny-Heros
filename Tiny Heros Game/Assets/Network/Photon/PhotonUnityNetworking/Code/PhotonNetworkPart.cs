@@ -1295,7 +1295,7 @@ namespace Photon.Pun
         ///
         /// See: https://doc.photonengine.com/en-us/pun/v2/gameplay/interestgroups
         ///
-        /// See: https://doc.photonengine.com/en-us/pun/v2/demos-and-tutorials/package-demos/culling-demo
+        /// See: https://doc.photonengine.com/en-us/pun/v2/demos-and-tutorials/package-demos/culling-GameScene
         /// </remarks>
         /// <param name="disableGroups">The interest groups to disable (or null).</param>
         /// <param name="enableGroups">The interest groups to enable (or null).</param>

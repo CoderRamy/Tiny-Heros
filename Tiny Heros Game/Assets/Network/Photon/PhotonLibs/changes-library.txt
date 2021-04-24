@@ -375,7 +375,7 @@ LoadBalancing:
 *** Version 4.1.1.7 (16. December 2016)
     Note: No new lib version. Just updated demos for the SDK.
 Demos:
-    Fixed: Demos with persistent (Turnbased) games. The Memory Demo was not setting up rooms correctly (which led to errors joining them) and used a "join" rather than a "rejoin" to get into saved games (getting added to the room once more).
+    Fixed: Demos with persistent (Turnbased) games. The Memory GameScene was not setting up rooms correctly (which led to errors joining them) and used a "join" rather than a "rejoin" to get into saved games (getting added to the room once more).
 
 *** Version 4.1.1.6 (9. December 2016 - rev3801)
     Changed: Default SentCountAllowance = 7.
@@ -486,7 +486,7 @@ LoadBalancing:
     Fixed: PlayerProperties sent to game server will now include well-known properties again. This fixes the "NickName missing" bug.
     Fixed: LoadBalancingClient.State value when the client fails to join or create a game on the Master Server. The state is correctly re-set to ClientState.JoinedLobby or ClientState.ConnectedToMaster.
     Internal: Added private inLobby value, to store if the client was/is in a lobby on the Master Server.
-    Fixed: DemoClient (in demo-loadbalancing) now makes use of the Name Server by using: ConnectToRegionMaster("eu").
+    Fixed: DemoClient (in GameScene-loadbalancing) now makes use of the Name Server by using: ConnectToRegionMaster("eu").
     Added: DemoClient now has debug output when the connection times out or can't be established.
 
 
@@ -514,7 +514,7 @@ Chat
     Note: Host name resolution will prefer IPv4 over IPv6, if both IPs should be available. IPv6 Addresses must use brackets! Example: [::1]:5055. This separates the port from the address.
     Added: Error logging when Addresses can not be resolved to IPs.
     Changed: LoadBalancingClient OpJoinOrCreateRoom() no longer allows you to re-join a room. Simply remove the ActorNumber from the parameters. To re-join, use OpJoin with actorNumber (Player.ID that was assigned in the room).
-    Added: Support for PS4 in Unity LoadBalancing SDK. Note: The demos are not all updated with controller support, as we use the old UI, still. To test export, use the Particle Demo.
+    Added: Support for PS4 in Unity LoadBalancing SDK. Note: The demos are not all updated with controller support, as we use the old UI, still. To test export, use the Particle GameScene.
 
 *** Version 4.0.0.11 (28. October 2015 - rev3093)
     Changed: Sending a generic Dictionary (with specific types) will now throw an Exception, if any key or value is null. This limitation does not include Dictionaries which use object as type. Those Exceptions are one of the few, which are not catched and turned into a debug message. Catch them by wrapping Operation calls, where needed (OpRaiseEvent()).
@@ -558,7 +558,7 @@ Chat
     Added: IP/Hostname to logged exceptions when Connect fails. This is easier to support (e.g. DNS lookup fails).
     Fixed: Library for PUN+ export to WebGL. Originally, we forced UDP as protocol for PUN+ export, as the native sockets library doesn't support TCP. However, WebGL export introduced a new use case.
     Added: LoadBalancingClient.EnableLobbyStatistics and .LobbyStatistics. They provide an overview which lobbies your game uses and how busy they are.
-    Fixed: The LB Demo should set CustomProperties instead of directly setting (any) properties.
+    Fixed: The LB GameScene should set CustomProperties instead of directly setting (any) properties.
     Fixed: SocketWebTcp is completely empty, unless WEBSOCKET is defined. Before the file still contained the "using" part of the class.
 LoadBalancing (Realtime and Turnbased API)
     Updated: Description for IsConnectedAndReady.
@@ -568,12 +568,12 @@ LoadBalancing (Realtime and Turnbased API)
     Changed: LoadBalancingClient.UserId no longer directly stores the id but puts it into AuthValues. This means, the UserId could also be set via setting AuthValues.
     Changed: The API of AuthenticationValues. There is now the UserId and AddAuthParameter() replaces the less general SetAuthParameters() (which only set specific key/values).
     Changed: PlayerName gets renamed to NickName, so PhotonPlayer.Name becomes .NickName and LoadBalancingClient.Name becomes .NickName, too. The old naming is marked as obsolete.
-    Changed: Particle Demo now connects to the Cloud by default (because it's easier to setup and try). You can define your own Master Server (Photon OnPremise) of course.
+    Changed: Particle GameScene now connects to the Cloud by default (because it's easier to setup and try). You can define your own Master Server (Photon OnPremise) of course.
     Added: GamePropertyKey.MasterClientId (248) and ParameterCode.MasterClientId (203)
     Added: ParameterCode.ExpectedValues (231)
     Added: ParameterCode.SuppressRoomEvents (237)
 Chat API:
-    Added: A Unity 4.6 demo with uGUI. It's missing a few features but should give you a good start to making your own.
+    Added: A Unity 4.6 GameScene with uGUI. It's missing a few features but should give you a good start to making your own.
     Added: Unity/WebGL support (merged from PUN).
     Added: Breaking! IChatClientListener.DebugReturn(). Photon lib and chat client log via this method (no logging to console by default).
     Changed: ChatClient.CustomAuthenticationValues is now .AuthValues. You can use those values to identify a user, even if you don't setup an external, custom authentication service.
@@ -614,7 +614,7 @@ LoadBalancing
 
 *** Version 4.0.0.4 (19. September 2014 - rev2736)
     Fixed: Fragmentation when CRC checks are enabled. This kept clients from sending fragmented commands when the additional 4 bytes CRC were included later on.
-    Fixed: An issue in the ChatClient which was referring to a class from Photon Unity networking. This caused compile issues in the Unity Chat Demo.
+    Fixed: An issue in the ChatClient which was referring to a class from Photon Unity networking. This caused compile issues in the Unity Chat GameScene.
     Updated: Reference doc generation.
 
 *** Version 4.0.0.3 (15. September 2014 - rev2731)
@@ -637,7 +637,7 @@ LoadBalancing
     Changed: The extern static methods for the native libs are now internal (instead of private). Pings are using them, too.
     Changed: WebRpcResponse.ReturnCode comment to include fail code.
     Changed: OpWebRpc doc is now much more complete and helpful.
-    Updated: Unity SDK Particle Demo (more) and LoadBalancing Demo (just a bit).
+    Updated: Unity SDK Particle GameScene (more) and LoadBalancing GameScene (just a bit).
 
 *** Version 4.0.0.1 (17. June 2014 - rev2663)
     Fixed: DotNet assembly no longer contains classes that try to include our Unity native socket libs. This was causing issues in some cases.
@@ -655,7 +655,7 @@ Chat:
     Changed: Folder for Chat API. It now begins with "Photon" which provides some context no matter where you copy the files. Easier to find in Unity projects.
     Changed: Operation FriendList and method SendFriendList renamed to AddFriends
     Added: Operation RemoveFriends and corresponding method in ChatClient.cs
-    Added: Console Demo has new command 'fr' to remove friends
+    Added: Console GameScene has new command 'fr' to remove friends
 
 *** Version 4.0.0.0 (23. May 2014 - rev2614)
     Changed: This version contains a few features that are not compatible with the Photon Server SDK v3.x. Notable features that are not in the Server SDK are: NameServer, WebHooks and Turnbased API features.
@@ -826,7 +826,7 @@ LoadBalancing API
     Note: This release only changed the version, matching the new Server SDK v3.2.0.0
     Updated: readme.txt
     Fixed: Reference for Windows 8 RT and Windows Phone 8 SDKs.
-    Added: Particle Demo to Unity Client SDK.
+    Added: Particle GameScene to Unity Client SDK.
 
 *** Version 3.0.1.18 (11.02.2013 - rev1998)
     Added: Optional per package CRC checksums to filter out compromised packages (avoiding more issues, compared to reading bad values).
@@ -836,9 +836,9 @@ Windows 8 RT & Windows 8 Phone:
     Fixed: Serialization of foat and double values. These caused exceptions when used in object-arrays.
 
 *** Version 3.0.1.17 (19.12.2012 - rev1946)
-    Added: New Platform: Mono 4 Android. Please check the Readme.txt for hints how to build the demo in Mono 4 Android.
+    Added: New Platform: Mono 4 Android. Please check the Readme.txt for hints how to build the GameScene in Mono 4 Android.
     Changed: The referenced DotNet assemblies used by our libraries, which makes ours compatible with Mono 4 Android and others.
-    Changed: The Particle Demo Logic to also handle events sent by JavaScript clients. In case these are used, the types used in event differ from what DotNet or other clients send.
+    Changed: The Particle GameScene Logic to also handle events sent by JavaScript clients. In case these are used, the types used in event differ from what DotNet or other clients send.
     Changed: PhotonPeer.LocalTimeInMilliSeconds property now uses SupportClass.GetTickCount(). That method is using Environment.TickCount (which can be replaced if needed).
     Changed: Any place that directly used Environment.TickCount (as the way SupportClass.GetTickCount() gets the value can be replaced).
     Renamed: GetLocalMsTimestampDelegate is now: SupportClass.IntegerMillisecondsDelegate (rarely used if at all).
@@ -856,21 +856,21 @@ Windows 8 RT & Windows 8 Phone:
 *** Version 3.0.1.15 (27.11.2012 - rev1917)
     Note: Silverlight SDK release only!
     Updated: Silverlight projects with proper references (hopefully). In case you wonder: Some projects are included even though only their (source) files are linked in Silverlight. We can't reference DotNet projects directly, so we use the (shared) files instead.
-    Updated: Silverlight Particle Demo now has a basic gui and hopefully helps with your first steps.
+    Updated: Silverlight Particle GameScene now has a basic gui and hopefully helps with your first steps.
 
 *** Version 3.0.1.14 (16.11.2012 - rev1891)
     Added: Interest Groups! In rooms, you might send events to an interest group, identified by a byte (255 groups are currently allowed). OpChangeGroups lets you add or remove groups you're interested in.
     Added: New platform! Welcome Windows 8 RT and Windows Phone 8. Both are "preview" releases but based on the stable DotNet basis we have.
-    Note: The Windows Phone 8 SDK does not yet have a LoadBalancing demo but the API is available (Windows Phone 8 is separate from the still existing Windows Phone 7.1 SDK).
+    Note: The Windows Phone 8 SDK does not yet have a LoadBalancing GameScene but the API is available (Windows Phone 8 is separate from the still existing Windows Phone 7.1 SDK).
     Added: Another new platform: Playstation Mobile! This is Sony's SDK for mobile platforms. Find out more about it: www.playstation.com/psm
-    Added: Silverlight 4 SDK is back. Now with LoadBalancing API (the demo implementation is not finished but the basic "logic" is running).
+    Added: Silverlight 4 SDK is back. Now with LoadBalancing API (the GameScene implementation is not finished but the basic "logic" is running).
     Fixed: Windows Phone 7 and Silverlight TCP error handling while connecting to the server. This should fix issues with failing connects due to missing policy settings.
     Internal: Windows Phone 7 and Silverlight TCP connections now set their state a bit differently (this doesn't affect the workflow though).
     Internal: Http implementation now checks if a Proxy was set deliberately. Check is: (WebRequest.DefaultWebProxy as WebProxy != null).
     Internal: DispatchIncomingCommands() now avoids copying lists when checking for commands that need a repeat.
     Internal: SendOutgoingCommands() now re-uses a buffer to create UDP packages in before sending. This should save a lot of memory allocation.
 LoadBalancing API:
-    Added: New demo "Particle". You will notice it's similar to the "Realtime Demo" but LoadBalancing- and Cloud-compatible and it makes better use of the default features. Check out Particle "Logic".
+    Added: New GameScene "Particle". You will notice it's similar to the "Realtime GameScene" but LoadBalancing- and Cloud-compatible and it makes better use of the default features. Check out Particle "Logic".
     Added: LoadBalancingClient.DisconnectedCause to track certain disconnect causes (no matter if the connection or an operation caused the disconnect).
     Added: DisconnectCause enum to enumerate those disconnection causes.
     Changed: LoadBalancing OnOperationResponse() and OnStatusChanged() to track most disconnect reasons (in DisconnectedCause).
@@ -884,9 +884,9 @@ LoadBalancing API:
     Changed: API now uses a factory method to create Room instances (this makes it possible to extend the Room class and instantiate the new class instead).
     Changed: The Player constructor now has an "actorProperties" parameter and will cache the provided properties. This makes sure actor-props are available locally.
 Windows Phone 8:
-    Added: Demo for Cloud / LoadBalancing. The Particle Demo only has a special WP8 GUI and links it's logic from a separate project (read: folder).
+    Added: GameScene for Cloud / LoadBalancing. The Particle GameScene only has a special WP8 GUI and links it's logic from a separate project (read: folder).
 Windows 8 RT:
-    Added: Demo "Phong", which is a simplified, basic multiplayer game. It's focus is to show how to sync data, not to make it super smooth and error free. Let us know any issues but bear with us as it isn't fully featured.
+    Added: GameScene "Phong", which is a simplified, basic multiplayer game. It's focus is to show how to sync data, not to make it super smooth and error free. Let us know any issues but bear with us as it isn't fully featured.
 
 *** Version 3.0.1.13 (26.09.2012 - rev1731)
     Fixed: Internals of method DispatchIncomingCommands() for UDP. In some cases this removed commands from a dictionary inside a foreach loop (which causes an Exception due to changing the dictionary)
@@ -931,7 +931,7 @@ Loadbalancing API:
 
 *** Version 3.0.1.8 (09.05.2012 - rev1508)
     Fixed: The OpJoinRandom of the LoadBalancingAPI failed to filter rooms for their custom room properties. Instead, any room matched. This is fixed now.
-    Added: New Demo for Windows Phone: Cloud Basics
+    Added: New GameScene for Windows Phone: Cloud Basics
     Changed: The loadbalancing / cloud-based demos are refactored to share a similar codebase
 
 *** Version 3.0.1.6 (07.05.2012 - rev1489)
@@ -944,10 +944,10 @@ Loadbalancing API:
     Changed: Protocol class now has a few methods to (effectively) serialize some datatypes to arrays (and into existing arrays)
     Removed: Surplus public methods from Protocol that were "type-named" like SerializeFloat. The functionality is in still with overloaded methods
     Added: count of packages (requests) outgoing if TrafficStatsEnabled
-Demo Realtime:
+GameScene Realtime:
     Changed: The commandline arguments are now server:port, protocol (udp,tcp,http), reliable sending, interval dispatch, interval send, interval move. Example: localhost:5055 Udp false 15 25 15
-    Changed: Demo Realtime: If the commandline sets an unknown protocol, the client shows a message and closes gracefully
-    Changed: Demo Realtime: The demo now starts in the grid view (showing something). Local player and player list are created with the Game instance. Player startpoint is randomized.
+    Changed: GameScene Realtime: If the commandline sets an unknown protocol, the client shows a message and closes gracefully
+    Changed: GameScene Realtime: The GameScene now starts in the grid view (showing something). Local player and player list are created with the Game instance. Player startpoint is randomized.
 Loadbalancing API:
     Renamed: LoadBalancingClient.lbPeer to .loadBalancingPeer
     Fixed: LocalPlayer.SetCustomProperties() usage
@@ -1063,7 +1063,7 @@ Internal:
 - Fixed: Udp fragment reassembly in case fragments are received out of order and incoming queue was not yet sorted
 - Fixed: Handling of incoming reliable commands (udp) which were skipped in some cases, if not received in order
 - Fixed: Network simulation issue which caused lost incoming commands
-- Fixed: Demo Realtime. protocol is now again Udp, fitting the default server address "localhost:5055" (make sure to build the demo with your server's address if Photon is not on the same machine)
+- Fixed: GameScene Realtime. protocol is now again Udp, fitting the default server address "localhost:5055" (make sure to build the GameScene with your server's address if Photon is not on the same machine)
 
 *** Version 3.0.0.7
 - Changed: Udp socket usage for Unity 3d lib. Both threads (send (in game loop) and receive (separate)) now have minimal locks while using the socket
@@ -1098,7 +1098,7 @@ Internal:
 - Internal: Http messages are now deserialized the same way that content in tcp or udp is handled
 
 *** Version 3.0.0.1 RC1
-- Fixed: Packaging of SDK now includes all files in demo folders, except a list of ignored file-endings (xaml and jpg files were missing in previous Silverlight and WindowsPhone SDKs)
+- Fixed: Packaging of SDK now includes all files in GameScene folders, except a list of ignored file-endings (xaml and jpg files were missing in previous Silverlight and WindowsPhone SDKs)
 
 *** Version 3.0.0.0 RC1
 - Changed: Filenames! Now include a '3' for Photon v3. Update your references! Also, Silverlight libraries now use "Silverlight" in the filename (was: SL)
@@ -1204,8 +1204,8 @@ Siverlight:
 - Added: Stopwatch class to DataTypes.cs (for Silverlight only)
 
 *** Version 6.2.0
-- Added: "Demo LiteLobby Chatroom" to Unity SDK
-- Updated: Demo Realtime in Unity client SDK. It's still compatible with the demo on other platforms but cleaned up and much better commented
+- Added: "GameScene LiteLobby Chatroom" to Unity SDK
+- Updated: GameScene Realtime in Unity client SDK. It's still compatible with the GameScene on other platforms but cleaned up and much better commented
 - Updated: Documentation is now clearer on where the Lite logic is used (it runs on Photon but is not the only application logic)
 - Updated: Documentation for the enumerations in IPhotonListener. The Lite application based ones are better described and it's now clear which ones are essential to the Photon client (not only in Lite)
 - Updated: Documentation in several other places
@@ -1232,10 +1232,10 @@ Siverlight:
 - Added: LiteOpCode.ExchangeKeysForEncryption = (byte)95
 - Added: Overloaded PhotonPeer.OpCustom() with new "encrypt" parameter
 - Added: property PhotonPeer.IsEncryptionAvailable is true if public-keys are exchanged and the secret is compiled from them
-- Added: Encryption demo to Realtime Demo. Press E to exchange keys and R to toggle encrypted sending for the move data (even though events are never encrypted)
+- Added: Encryption GameScene to Realtime GameScene. Press E to exchange keys and R to toggle encrypted sending for the move data (even though events are never encrypted)
 - Changed: PeerBase methods: sendOperation()->EnqueueOperation(...,encrypt), updateRoundTripTimeAndVariance()->UpdateRoundTripTimeAndVariance()
 - Updated: the Unity client is now a Unity v3.1 project. Make sure to change the server address before you build for iPhone (localhost:5055 won't work on the mobile)
-- Removed: the outdated, separate iPhone demo (was: Unity v1.7 for iPhone)
+- Removed: the outdated, separate iPhone GameScene (was: Unity v1.7 for iPhone)
 - Updated: PhotonPeer documentation for Service(), DispatchIncomingCommands() and SendOutgoingCommands()
 - Added: OpRaiseEvent() overload with parameter TargetActors. Sends optional list of actors that will receive the event (if null, all *other* actors will receive the event, as default)
 - Internal: Added source BigInteger.cs, DiffieHellmanCryptoProvider.cs and OakleyGroups.cs
@@ -1252,8 +1252,8 @@ Siverlight:
 *** Version 6.0.0
 - Changed: This library requires Photon v2.2.0 and up! (in other words: the libraries are not compatible with older Photon servers, due to servertime changes)
 - Added: Support for arrays in arrays. Any serializable datatype can now be used in nested arrays. Even arrays of Hashtables are possible.
-- Added: Realtime Demo optional command line arguments for game config. set all or none: serverAddress, useTcp (true/false), useReliable (true/false), int intervalDispatch, intervalSend (ms), intervalMove (ms)
-- Note: Realtime Demo commandline might look like this: start demo-realtime.exe localhost:5055 false true 5 25 100
+- Added: Realtime GameScene optional command line arguments for game config. set all or none: serverAddress, useTcp (true/false), useReliable (true/false), int intervalDispatch, intervalSend (ms), intervalMove (ms)
+- Note: Realtime GameScene commandline might look like this: start GameScene-realtime.exe localhost:5055 false true 5 25 100
 - Changed: renamed GetLocalMsTimestamp property to LocalMsTimestampDelegate (it does not have a getter, despite the old name's implication)
 - Added: PhotonPeer.LocalTimeInMilliSeconds property to use the timestamp delegate to get the current client milliseconds (by default this is Environment.TickCount)
 - Changed: UDP: The default value for PhotonPeer.RoundTripTime (300ms, used before connecting) is now replaced with the turnaround time of connect. This should lead to accurate RTT values much sooner
@@ -1265,9 +1265,9 @@ Siverlight:
 - Changed: internal: ACKs by the server are again directly executed (other commands which are put into the action queue and dispatched)
 - Fixed: Peers with TCP as protocol will no longer try to disconnect while not being connected (does not do anything of disconnected or disconnecting)
 - Changed: Peers with TCP as protocol will clear the outgoing queue when disconnect() is called (while connected. see fix above)
-- Updated: Silverlight Realtime Demo slightly
+- Updated: Silverlight Realtime GameScene slightly
 - Added: PhotonPeer.Listener property to give subclasses access to the IPhotonPeerListener (set in constructor). Can be useful to call Listener.DebugReturn()
-- Added: LitePeer-Source.cs to demo-realtime. This is the source of a LitePeer and could be used as sample to create custom operations on the client side
+- Added: LitePeer-Source.cs to GameScene-realtime. This is the source of a LitePeer and could be used as sample to create custom operations on the client side
 
 *** Version 5.9.0
 - Release: of changes in 5.7.6 and 5.7.5
@@ -1300,8 +1300,8 @@ Siverlight:
 - Changed: internal threading: Callbacks due to incoming packages and commands are now queued and triggered by dispatch (in game loop)
 - Changed: dispatch of action-queue as added to DispatchIncomingCommands (in EnetPeer and TPeer)
 - Changed: internally, there is no locking for outgoing reliable and unreliable command lists anymore
-- Changed: Realtime Demo timer usage to avoid nullref on form-close
-- Changed: Realtime Demo propety isReliable is now in the Player class
+- Changed: Realtime GameScene timer usage to avoid nullref on form-close
+- Changed: Realtime GameScene propety isReliable is now in the Player class
 - Changed: Game.cs and Player.cs for all realtime demos. There is now something like a gameloop (Update()) which must be called regularly and makes (pretty) sure just one thread accesses the peer
 - Changed: all realtime demos to use the new Update() method and use more similar Game and Player classes (cleanup for less differences)
 - Fixed: RoundtripTimeVariance is now also reset on connect / init, so the resend-timing of reliable udp does not suffer when a peer connects after a disconnect
@@ -1322,7 +1322,7 @@ Siverlight:
 - Added: Silverlight supports either URL:Port and IP:Port as server url string
 
 *** Version 5.7.1 RC2
-- Added: DotNet "Lobby Demo" which uses the "LiteLobby" application of the server SDK to show running games and their player-count
+- Added: DotNet "Lobby GameScene" which uses the "LiteLobby" application of the server SDK to show running games and their player-count
 - Changed: the realtime demos to use the more similar Game and Player classes
 
 *** Version 5.7.0 RC1
@@ -1331,7 +1331,7 @@ Siverlight:
 - Changed: Silverlight: Hashtable and ArrayList are now a separate project / lib
 - Internal: Silverlight: listener interfaces (Photon and Neutron) now conditionally use ExitGames.Client datatypes from lib
 - Changed: Photon: connect callback is now deferred to on-init-response (instead of enet-connect) which ensures "no ops before init"
-- Changed: Unity Realtime demo: using game and player classes merged over from silverlight and re-wrote sample code to display players
+- Changed: Unity Realtime GameScene: using game and player classes merged over from silverlight and re-wrote sample code to display players
 - Internal: photon projects now have a pre-compile setting "Photon"
 - Changed: SupportClass Namespace is now compiling into either ExitGames.Client .Photon or .Neutron (to avoid ambiguation)
 - Added: LitePeer as Lite Application specific peer (with OpJoin and the rest)
@@ -1349,7 +1349,7 @@ Siverlight:
 - Removed: error "report" when TCP incoming queue getts fuller
 - Internal: updates Neutron part to run with Protocol.cs de/serialization (added a serializeParametersNeutron() as there are multiple differences to UDP part)
 - Changed: projects and scripts to build documentation xml in debug builds
-- Renamed: demo-photon-SL to demo-realtime-SL (according to other demo realtime implementations)
+- Renamed: GameScene-photon-SL to GameScene-realtime-SL (according to other GameScene realtime implementations)
 - Changed: many classes and properties are now internal. e.g. Protocol, EnetChannel, EnetPeer (and inner classes), TPeer, SuppportClass.ReadInput()
 - Updated: AssemblyInfo.cs for photon dotnet and silverlight
 - Internal: projects to have precompile-flags also in release builds
@@ -1374,8 +1374,8 @@ Siverlight:
 - Changed: now throwing exceptions when trying to set init-values at runtime (to be fixed at development-time)
 - Added: doc for sequencing and updated channel doc, (too) short chapter on custom operations, topic "opCodes: byte versus short", doc for property-related functions
 - Added: overloaded functions for opGetProperties*() for byte-keys
-- Fixed: Realtime Demo keypress in input-fields have been used as in-game actions, too
-- Changed: Realtime Demo game-name is now that of the native samples ("play" with other platform SDKs)
+- Fixed: Realtime GameScene keypress in input-fields have been used as in-game actions, too
+- Changed: Realtime GameScene game-name is now that of the native samples ("play" with other platform SDKs)
 - Changed: Silverlight SDK has a different port in the constants NPeer.URL_RT_SERVER* and .IP_RT_SERVER* (as Silverlight uses TCP port 4350)
 
 *** Version 5.4.1
@@ -1409,7 +1409,7 @@ Siverlight:
 
 *** Version 5.3.11
 - Change: all bytes sent to and from server are treated as unsigned bytes (standard for c#). same for byte-arrays
-- Change: updated realtime demo to use int for posx,posy but still sending just a byte-value (the field is 16x16, after all)
+- Change: updated realtime GameScene to use int for posx,posy but still sending just a byte-value (the field is 16x16, after all)
 
 *** Version 5.3.10
 - Change: switched from sbyte-array to byte-array in de/serialization! important: bytes (ev-keys etc) are sbyte. arrays of bytes are unsigned (on client and server)
@@ -1465,7 +1465,7 @@ Siverlight:
 - New: login(), register(), customOperation() and raiseEvent() (all variants) can be encrypted with additional parameter "encrypt" (overloaded function)
 - New: encryption uses HTTPs as transfer, by changing the "http:" url to a "https:" url
 - New: returnCode for failure of encrypted HTTPs requests: RC_SSL_AUTHENTICATION_FAILED (if certificate is not found, valid or expired)
-- Fixed: Realtime Demo using the older Realtime Server
+- Fixed: Realtime GameScene using the older Realtime Server
 
 *** Version 5.3.0
 - New: separated libraries into "Compact Framework" (CF) and "Regular Framework" (no name postfix)
@@ -1476,7 +1476,7 @@ Siverlight:
 - Removed: serverTimeOffset is now internal only and removed from the API (was only needed to calculate the servertime by yourself, before neutron could do this for you)
 - Change: debug out for realtime classes is now layered
 - Change: debug level NPeer.DebugOut is now a NPeer.DebugLevel enum and will include all lower levels in output, default: DebugLevel.ERROR
-- Fixed: size of realtime demo board
+- Fixed: size of realtime GameScene board
 - Change: NPeer constructor now always throws an exception if listener is null
 - Change: EventAction() parameter eventCode is now of type sbyte (was int), which corresponds to type of RaiseEvent (and server-side used type)
 - Internal: NPeer.opRaiseEvent() now treats eventCode as parameter of operation RaiseEvent (as changed in latest RT server)
@@ -1495,7 +1495,7 @@ Siverlight:
 - added constants for realtime returnCodes (RC_RT_*): RC_RT_CONNECT, RC_RT_DISCONNECT and RC_RT_EXCEPTION
 - added constants for realtime eventCodes (EV_RT_*)
 - added constants for Neutron servers to Neutron class: URL_NEUTRON_*
-- added Reamtime Demo
+- added Reamtime GameScene
 - updated samples
 - added test for UDP to NUnit
 
