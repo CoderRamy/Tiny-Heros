@@ -421,11 +421,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkspeed: 6
+  isAttacking: 0
   gamecam: {fileID: 0}
   camPosition: {x: 6, y: 5}
   characters:
   - {fileID: 1543773456916754755}
   currentChar: 0
+  attackType: 0
 --- !u!114 &-5095091498485958386
 MonoBehaviour:
   m_ObjectHideFlags: 0
