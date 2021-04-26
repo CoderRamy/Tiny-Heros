@@ -8,6 +8,8 @@ TagManager:
   - RandomPath
   - MeleeAttackColider
   - FxTemporaire
+  - Xp_Item
+  - Health_Item
   layers:
   - Default
   - TransparentFX
