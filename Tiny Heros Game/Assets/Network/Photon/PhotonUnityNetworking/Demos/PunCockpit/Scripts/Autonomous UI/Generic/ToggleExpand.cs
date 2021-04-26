@@ -16,6 +16,7 @@ namespace Photon.Pun.GameScene.Cockpit
     public class ToggleExpand : MonoBehaviour
     {
         public GameObject Content;
+        public GameObject Content1;
 
         public Toggle Toggle;
 
@@ -23,7 +24,7 @@ namespace Photon.Pun.GameScene.Cockpit
 
         void OnEnable()
         {
-            Content.SetActive(Toggle.isOn);
+           // Content.SetActive(Toggle.isOn);
 
             if (!_init)
             {
@@ -39,6 +40,16 @@ namespace Photon.Pun.GameScene.Cockpit
         void HandleToggleOnValudChanged(bool value)
         {
             Content.SetActive(value);
+            if (value)
+            {
+                Content1.SetActive(false);
+
+            }
+            else
+            {
+                Content1.SetActive(true);
+
+            }
         }
 
     }
