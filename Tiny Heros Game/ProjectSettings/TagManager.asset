@@ -4,12 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - AI
-  - RandomPath
-  - MeleeAttackColider
-  - FxTemporaire
-  - Xp_Item
-  - Health_Item
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -19,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - 
+  - Character
+  - Powerup
   - 
   - 
   - 

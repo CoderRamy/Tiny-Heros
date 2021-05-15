@@ -1366,8 +1366,10 @@ MonoBehaviour:
   shootPoint: {fileID: 447658}
   attackLenght: 0.75
   attackRange: 25
+  attackHight: 0
   hitEffect: {fileID: 0}
   hideObject: {fileID: 0}
+  Target: {fileID: 0}
 --- !u!1 &134518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,8 +1906,10 @@ MonoBehaviour:
   shootPoint: {fileID: 481690}
   attackLenght: 0.75
   attackRange: 7.5
+  attackHight: 0
   hitEffect: {fileID: 107352, guid: 93105f7b97c43b34c8eb44601e45d57c, type: 3}
   hideObject: {fileID: 167706}
+  Target: {fileID: 0}
 --- !u!1 &147834
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,7 +2775,6 @@ GameObject:
   - component: {fileID: 433912}
   - component: {fileID: 5493670}
   - component: {fileID: 13633336}
-  - component: {fileID: 11441892}
   m_Layer: 0
   m_Name: Dwarf Controller
   m_TagString: Untagged
@@ -2826,26 +2829,6 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1.5, z: 0}
---- !u!114 &11441892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05210583cc3daf24186b660cada5da85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkspeed: 6
-  gamecam: {fileID: 0}
-  camPosition: {x: 4.5, y: 7}
-  characters:
-  - {fileID: 164574}
-  - {fileID: 134048}
-  - {fileID: 146864}
-  currentChar: 0
 --- !u!1 &178260
 GameObject:
   m_ObjectHideFlags: 0
