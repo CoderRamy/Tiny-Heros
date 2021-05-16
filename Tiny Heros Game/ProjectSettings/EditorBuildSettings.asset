@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/BattleIO/Demo/Scenes/Home.unity
+    path: Assets/GameScenes/Home.unity
     guid: bd9caa164d7acf645ae0682ee38b25ab
   - enabled: 1
     path: Assets/BattleIO/Demo/Scenes/Battle.unity
@@ -15,5 +15,6 @@ EditorBuildSettings:
     path: Assets/BattleIO/Demo/Scenes/OldBattle.unity
     guid: a5cc9d207f9bf274bb65271eef7d334d
   - enabled: 1
-    path: Assets/BattleIO/Demo/BattleRoyale/Scenes/BattleRoyale.unity
+    path: Assets/GameScenes/BattleRoyale.unity
     guid: 544be37376f7bc04fbd1f936db394efa
+  m_configObjects: {}
