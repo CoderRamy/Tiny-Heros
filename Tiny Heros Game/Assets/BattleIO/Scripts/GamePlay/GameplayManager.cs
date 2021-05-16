@@ -39,7 +39,14 @@ public class GameplayManager : PunBehaviour
     public PowerUpSpawnData[] powerUps;
     public readonly Dictionary<string, PowerUpEntity> powerUpEntities = new Dictionary<string, PowerUpEntity>();
     public readonly Dictionary<string, CharacterAttributes> attributes = new Dictionary<string, CharacterAttributes>();
-
+    public Props[] _Props;
+    [System.Serializable]
+    public struct Props
+    {
+        public GameObject _Props;
+        public SimpleSphereData SpawnZone;
+        public int Count;
+    }
     protected virtual void Awake()
     {
         if (Singleton != null)
@@ -76,6 +83,7 @@ public class GameplayManager : PunBehaviour
     
     protected virtual void OnStartServer()
     {
+        Debug.Log("6");
         foreach (var powerUp in powerUps)
         {
             if (powerUp.powerUpPrefab == null)
@@ -83,6 +91,9 @@ public class GameplayManager : PunBehaviour
             for (var i = 0; i < powerUp.amount; ++i)
                 SpawnPowerUp(powerUp.powerUpPrefab.name);
         }
+
+        SpawnProps();
+        Debug.Log("5");
     }
 
     public void SpawnPowerUp(string prefabName)
@@ -95,6 +106,23 @@ public class GameplayManager : PunBehaviour
             var powerUpEntityGo = PhotonNetwork.InstantiateSceneObject(powerUpPrefab.name, GetPowerUpSpawnPosition(), Quaternion.identity, 0, new object[0]);
             var powerUpEntity = powerUpEntityGo.GetComponent<PowerUpEntity>();
             powerUpEntity.prefabName = prefabName;
+        }
+    }
+
+    public void SpawnProps()
+    {
+        Debug.Log("1");
+        if (!PhotonNetwork.isMasterClient)
+            return;
+        Debug.Log("2");
+        for (int i = 0; i < _Props.Length; i++)
+        {
+            Debug.Log("3");
+            for (int x = 0; x < _Props[i].Count; x++)
+            {
+                var _prop = PhotonNetwork.InstantiateSceneObject(_Props[i]._Props.name, _Props[i].SpawnZone.GetRandomPosition(), Quaternion.identity, 0, new object[0]);
+                Debug.Log("4");
+            }
         }
     }
 

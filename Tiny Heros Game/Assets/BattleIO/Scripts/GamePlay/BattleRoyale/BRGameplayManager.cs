@@ -171,6 +171,7 @@ public class BRGameplayManager : GameplayManager
         CurrentCountdown = 0;
         SpawnerMoveCountdown = 0;
         isInSpawnableArea = false;
+        SpawnProps();
     }
 
     public override bool CanRespawn(CharacterEntity character)
@@ -397,6 +398,7 @@ public class BRGameplayManager : GameplayManager
         var spawnPosition = character.TempTransform.position = GetSpawnerPosition();
         return spawnPosition;
     }
+
 
     [PunRPC]
     protected void RpcOnCurrentCountdownChanged(float currentCountdown)
