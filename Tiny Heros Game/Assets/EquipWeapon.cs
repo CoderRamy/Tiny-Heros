@@ -12,17 +12,17 @@ public class EquipWeapon : MonoBehaviour
             //Destroy(GetComponent<PhotonView>());
             //Destroy(GetComponent<EquipWeapon>());
 
-            //if (other.GetComponent<CharacterEntity>())
-            //{
-            //    Debug.Log("set Weapons Character");
-            //    other.GetComponent<CharacterEntity>().characterModelTransform.GetComponentInChildren<CharacterModel>().SetWeaponModel(null, gameObject, null);
-            //}
+            if (other.GetComponent<CharacterEntity>())
+            {
+                Debug.Log("set Weapons Character");
+                other.GetComponent<CharacterEntity>().characterModelTransform.GetComponentInChildren<CharacterModel>().SetWeaponModel(null, gameObject, null);
+            }
 
-            //if (other.GetComponent<BotEntity>())
-            //{
-            //    Debug.Log("set Weapons Bot");
-            //    other.GetComponent<BotEntity>().characterModelTransform.GetComponentInChildren<CharacterModel>().SetWeaponModel(null, gameObject, null);
-            //}
+            if (other.GetComponent<BotEntity>())
+            {
+                Debug.Log("set Weapons Bot");
+                other.GetComponent<BotEntity>().characterModelTransform.GetComponentInChildren<CharacterModel>().SetWeaponModel(null, gameObject, null);
+            }
         }
     }
 }
