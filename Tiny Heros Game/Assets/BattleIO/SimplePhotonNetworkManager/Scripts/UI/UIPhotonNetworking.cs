@@ -21,6 +21,9 @@ public class UIPhotonNetworking : UIBase
     private readonly Dictionary<string, UIPhotonNetworkingEntry> entries = new Dictionary<string, UIPhotonNetworkingEntry>();
     private readonly Dictionary<int, CloudRegionCode> regions = new Dictionary<int, CloudRegionCode>();
 
+    public bool autoConnect = false;
+    public bool autoOpenChangeName = false;
+
     private void OnEnable()
     {
         if (dropdownRegion != null)
@@ -44,6 +47,9 @@ public class UIPhotonNetworking : UIBase
         SimplePhotonNetworkManager.onReceivedRoomListUpdate += OnReceivedRoomListUpdateCallback;
         SimplePhotonNetworkManager.onJoinedLobby += OnJoinedLobbyCallback;
         SimplePhotonNetworkManager.onDisconnected += OnDisconnectedCallback;
+
+        if (autoConnect)
+            OnClickConnectToBestCloudServer();
     }
 
     private void OnDisable()
@@ -87,6 +93,7 @@ public class UIPhotonNetworking : UIBase
             uiDisconnected.Hide();
 
         if (uiConnected != null)
+            if(autoOpenChangeName)
             uiConnected.Show();
     }
 

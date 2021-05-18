@@ -51,7 +51,7 @@ public class BRGameplayManager : GameplayManager
     [Header("Battle Royale")]
     public float waitForPlayersDuration;
     public float waitForFirstCircleDuration;
-    public SimpleSphereData spawnableArea;
+    public SimpleCubeData spawnableArea;
 
     public BRPattern[] patterns;
     public GameObject circleObject;
@@ -172,6 +172,7 @@ public class BRGameplayManager : GameplayManager
         SpawnerMoveCountdown = 0;
         isInSpawnableArea = false;
         SpawnProps();
+        SpawnWeapons();
     }
 
     public override bool CanRespawn(CharacterEntity character)
@@ -389,8 +390,8 @@ public class BRGameplayManager : GameplayManager
     {
         var position = GetSpawnerPosition();
         var dist = Vector3.Distance(position, spawnableArea.transform.position);
-        return dist <= spawnableArea.radius * 0.5f &&
-            dist <= spawnableArea.radius * 0.5f;
+        return dist <= spawnableArea.size.x * 0.5f &&
+            dist <= spawnableArea.size.z * 0.5f;
     }
 
     public Vector3 SpawnCharacter(CharacterEntity character)

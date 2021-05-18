@@ -487,7 +487,7 @@ PrefabInstance:
     - target: {fileID: 1762018173025169312, guid: d94b6c3adedb282409fcb59cb49d45bb,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1762018173025169313, guid: d94b6c3adedb282409fcb59cb49d45bb,
         type: 3}
@@ -760,6 +760,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefaultMalePBR (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8325841355330827008, guid: 15ced1590bc50f245b4d776e385f8ec6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8325841355331317536, guid: 15ced1590bc50f245b4d776e385f8ec6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -893,7 +898,7 @@ PrefabInstance:
     - target: {fileID: 4235140611507961952, guid: cb7b91e071406964fb2cb2f9f1760162,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4235140611508067392, guid: cb7b91e071406964fb2cb2f9f1760162,
         type: 3}

@@ -16,7 +16,7 @@ public class CharacterEntity : BaseNetworkGameCharacter
     public Transform effectTransform;
     public Transform characterModelTransform;
     public GameObject[] localPlayerObjects;
-    public float jumpHeight = 2f;
+    public float jumpHeight = 0f;
     [Header("UI")]
     public Transform hpBarContainer;
     public Image hpFillImage;
