@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 4319408554867243803}
   - component: {fileID: 2551630608312494745}
   m_Layer: 8
-  m_Name: BasicMaleDefault
+  m_Name: BasicMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

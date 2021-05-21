@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
   previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
-  title: Mike
+  title: BasicMaleNoWeapon
   description: he is always angry
   price:
     id: 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
   previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
-  title: Mike
+  title: Bear
   description: he is always angry
   price:
     id: 
@@ -31,5 +31,5 @@ MonoBehaviour:
     addHpRecoveryRate: 0
     addDamageRateLeechHp: 0
     addSpreadDamages: 0
-  modelObject: {fileID: -7901281535490247679, guid: eb5c6fd72439d7644911677d39a4fbff,
+  modelObject: {fileID: 353364032075144139, guid: 3b865fc8cb880104799a4acb1b34762e,
     type: 3}
