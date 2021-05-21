@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 114501380272838834}
   - component: {fileID: 114437649527263462}
   - component: {fileID: 114620086829733952}
+  - component: {fileID: -7493262184026635526}
   m_Layer: 8
   m_Name: BRBotEntity
   m_TagString: Untagged
@@ -125,10 +126,11 @@ MonoBehaviour:
   nameText: {fileID: 114659412335084072}
   levelText: {fileID: 0}
   invincibleEffect: {fileID: 1285848669677732}
+  weaponData: {fileID: 0}
   updateMovementDuration: 3
   attackDuration: 0
-  randomMoveDistance: 10
-  detectEnemyDistance: 3
+  randomMoveDistance: 5
+  detectEnemyDistance: 10
   turnSpeed: 5
   useCustomMoveSpeed: 0
   customMoveSpeed: 0
@@ -147,6 +149,8 @@ MonoBehaviour:
     addHpRecoveryRate: 0
     addDamageRateLeechHp: 0
     addSpreadDamages: 0
+  targetPosition: {x: 0, y: 0, z: 0}
+  isPickupWeapon: 0
 --- !u!114 &114501380272838834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +268,21 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &-7493262184026635526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019386342080252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba890d3d5f5695f4486141555cf5ce4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 5
+  decisionRates: 0
+  TargetObject: {fileID: 0}
 --- !u!1 &1095105598535572
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +419,7 @@ Transform:
   m_GameObject: {fileID: 1174352171864694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalScale: {x: 9, y: 9, z: 9}
   m_Children: []
   m_Father: {fileID: 4290912272172530}
   m_RootOrder: 1

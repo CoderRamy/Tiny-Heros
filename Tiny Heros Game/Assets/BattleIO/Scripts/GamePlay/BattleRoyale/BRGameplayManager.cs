@@ -49,7 +49,9 @@ public class BRGameplayManager : GameplayManager
     public const string CUSTOM_ROOM_COUNT_ALL_CHARACTERS = "iALL";
 
     [Header("Battle Royale")]
-    public float waitForPlayersDuration;
+    public float waitForPlayersDurationFrom;
+    public float waitForPlayersDurationTo;
+
     public float waitForFirstCircleDuration;
     public SimpleCubeData spawnableArea;
 
@@ -166,7 +168,7 @@ public class BRGameplayManager : GameplayManager
         currentCircle = 0;
         currentRadius = 0;
         currentState = BRState.WaitingForPlayers;
-        currentDuration = currentCountdown = waitForPlayersDuration;
+        currentDuration = currentCountdown = Random.Range(waitForPlayersDurationFrom , waitForPlayersDurationTo);
         CurrentCircleHpRateDps = 0;
         CurrentCountdown = 0;
         SpawnerMoveCountdown = 0;

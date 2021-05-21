@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -20,10 +21,6 @@ MonoBehaviour:
     amount: 0
   canBuyOnlyOnce: 0
   isLock: 1
-  addHp: 0
-  addAttack: 0
-  addDefend: 0
-  addMoveSpeed: -5
   stats:
     addHp: 0
     addAttack: 0
@@ -36,14 +33,17 @@ MonoBehaviour:
     addSpreadDamages: 0
   rightHandObject: {fileID: 0}
   leftHandObject: {fileID: 1000013326775716, guid: 08b6545c94f00034ab49c48f480d2779,
-    type: 2}
+    type: 3}
   shieldObject: {fileID: 0}
-  actionId: 1
-  animationDuration: 0.54
-  launchDuration: 0.34
   attackAnimations:
   - actionId: 1
     animationDuration: 0.54
     launchDuration: 0.34
+    speed: 1
+    isAnimationForLeftHandWeapon: 0
   damagePrefab: {fileID: 114720440324133354, guid: 7b04fff58321c264eba96868b87778c3,
-    type: 2}
+    type: 3}
+  attackFx: []
+  weaponRank: 0
+  attackType: 1
+  OriginAmmo: 50

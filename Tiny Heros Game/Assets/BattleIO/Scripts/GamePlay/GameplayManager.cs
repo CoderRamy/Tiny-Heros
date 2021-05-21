@@ -147,7 +147,7 @@ public class GameplayManager : PunBehaviour
         {
             for (int x = 0; x < _Weapons[i].Count; x++)
             {
-                var _prop = PhotonNetwork.InstantiateSceneObject(_Weapons[i]._Weapons.name, _Weapons[i].SpawnZone.GetRandomPosition(), Quaternion.identity, 0, new object[0]);
+                var _prop = PhotonNetwork.InstantiateSceneObject(_Weapons[i]._Weapons.name, _Weapons[i].SpawnZone.GetRandomPosition(), _Weapons[i]._Weapons.transform.rotation, 0, new object[0]);
                 _prop.transform.SetParent(_Weapons[i].SpawnZone.transform);
             }
         }

@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 114143842449089820}
   - component: {fileID: 114440289766304596}
   - component: {fileID: 114693187758562832}
+  - component: {fileID: 455343022}
   m_Layer: 8
   m_Name: BotEntity
   m_TagString: Untagged
@@ -58,7 +59,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019386342080252}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -151,6 +152,7 @@ MonoBehaviour:
   nameText: {fileID: 114659412335084072}
   levelText: {fileID: 0}
   invincibleEffect: {fileID: 1316826069239968}
+  weaponData: {fileID: 0}
   updateMovementDuration: 3
   attackDuration: 0
   randomMoveDistance: 10
@@ -173,6 +175,7 @@ MonoBehaviour:
     addHpRecoveryRate: 0
     addDamageRateLeechHp: 0
     addSpreadDamages: 0
+  isPickupWeapon: 0
 --- !u!114 &114693187758562832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +254,20 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &455343022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019386342080252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba890d3d5f5695f4486141555cf5ce4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 50
+  decisionRates: 0
 --- !u!1 &1039089210694062
 GameObject:
   m_ObjectHideFlags: 0
@@ -4964,7 +4981,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d1507a781c4e49945b541530623f56e9, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10186,7 +10202,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6ecae4cf93f008649b1ee8aab7444d5b, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

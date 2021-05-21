@@ -245,6 +245,7 @@ public class CharacterEntity : BaseNetworkGameCharacter
     protected CharacterModel characterModel;
     protected CharacterData characterData;
     protected HeadData headData;
+    [SerializeField]
     protected WeaponData weaponData;
     protected bool isMobileInput;
     protected Vector2 inputMove;
@@ -579,6 +580,15 @@ public class CharacterEntity : BaseNetworkGameCharacter
         if (animator == null)
             return;
 
+        if(weaponData == null)
+        {
+            animator.SetBool("IsEqup", false);
+        }
+        else
+        {
+            animator.SetBool("IsEqup", true);
+        }
+
         if (Hp <= 0)
         {
             animator.SetBool("IsDead", true);
@@ -882,6 +892,7 @@ public class CharacterEntity : BaseNetworkGameCharacter
 
     public void CmdInit(string selectHead, string selectCharacter, string selectWeapon, string extra)
     {
+        
         photonView.RPC("RpcServerInit", PhotonTargets.MasterClient, selectHead, selectCharacter, selectWeapon, extra);
     }
 
@@ -889,7 +900,7 @@ public class CharacterEntity : BaseNetworkGameCharacter
     protected void RpcServerInit(string selectHead, string selectCharacter, string selectWeapon, string extra)
     {
         Hp = TotalHp;
-        this.selectHead = selectHead;
+      //  this.selectHead = selectHead;
         this.selectCharacter = selectCharacter;
         this.selectWeapon = selectWeapon;
         this.extra = extra;

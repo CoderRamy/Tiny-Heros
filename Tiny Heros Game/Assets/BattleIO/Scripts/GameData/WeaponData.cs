@@ -17,6 +17,10 @@ public class WeaponData : ItemData
     public AudioClip[] attackFx;
     public readonly Dictionary<int, AttackAnimation> AttackAnimations = new Dictionary<int, AttackAnimation>();
 
+    public WeaponRank weaponRank;
+    public AttackType attackType;
+    public int OriginAmmo;
+
     public void Launch(CharacterEntity attacker, bool isLeftHandWeapon)
     {
         if (attacker == null || !PhotonNetwork.isMasterClient)
@@ -70,4 +74,20 @@ public class WeaponData : ItemData
         var randomedIndex = Random.Range(0, list.Count - 1);
         return list[randomedIndex];
     }
+}
+
+
+public enum WeaponRank
+{
+    Bronze = 0,
+    Silver,
+    Gold,
+    Platinum,
+    Diamond,
+}
+
+public enum AttackType
+{
+    Melee = 0,
+    Ranged,
 }

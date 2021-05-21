@@ -7,7 +7,8 @@ public class BotEntity : CharacterEntity
     public enum Characteristic
     {
         Normal,
-        NoneAttack
+        NoneAttack,
+        PickupWeapon,
     }
     protected string botPlayerName;
     public override string playerName
@@ -36,10 +37,11 @@ public class BotEntity : CharacterEntity
     public WeaponData fixWeaponData;
     public Characteristic characteristic;
     public CharacterStats startAddStats;
-    private Vector3 targetPosition;
+    public Vector3 targetPosition;
     private float lastUpdateMovementTime;
     private float lastAttackTime;
     private bool isWallHit;
+    public bool isPickupWeapon;
 
     protected override void Init()
     {
@@ -87,10 +89,22 @@ public class BotEntity : CharacterEntity
         if (isReachedTarget || isWallHit || Time.unscaledTime - lastUpdateMovementTime >= updateMovementDuration)
         {
             lastUpdateMovementTime = Time.unscaledTime;
-            targetPosition = new Vector3(
+
+            if (isPickupWeapon)
+            {
+                
+            }
+            else
+            {
+                            targetPosition = new Vector3(
                 TempTransform.position.x + Random.Range(-randomMoveDistance, randomMoveDistance),
                 0,
                 TempTransform.position.z + Random.Range(-randomMoveDistance, randomMoveDistance));
+            }
+
+
+
+
             isWallHit = false;
         }
 
@@ -99,6 +113,7 @@ public class BotEntity : CharacterEntity
         if (FindEnemy(out enemy) && characteristic == Characteristic.Normal && Time.unscaledTime - lastAttackTime >= attackDuration)
         {
             lastAttackTime = Time.unscaledTime;
+            //attack Animation
             if (attackingActionId < 0)
                 attackingActionId = weaponData.GetRandomAttackAnimation().actionId;
             rotatePosition = enemy.TempTransform.position;
