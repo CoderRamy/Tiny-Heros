@@ -14022,12 +14022,12 @@ PrefabInstance:
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: waitForPlayersDurationFrom
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: waitForPlayersDurationTo
-      value: 2
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c86857d22734b86408451ea6ce9ed4ce, type: 3}
