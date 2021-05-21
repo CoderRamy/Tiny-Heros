@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-    [RequireComponent(typeof(Text))]
     public class FPSCounter : MonoBehaviour
     {
         const float fpsMeasurePeriod = 0.5f;
         private int m_FpsAccumulator = 0;
         private float m_FpsNextPeriod = 0;
         private int m_CurrentFps;
-        const string display = "FPS: {0}";
+        const string display = "{0}";
         public Text m_Text;
 
 
