@@ -66,7 +66,7 @@ public class CharacterModel : MonoBehaviour
 
     public void SetWeaponModel(GameObject rightHandModel, GameObject leftHandModel, GameObject shieldModel)
     {
-        
+       
         ClearGameObjects(weaponModels);
         var newRightHandModel = AddModel(rightHandModel, rightHandContainer, weaponModels);
         var newLeftHandModel = AddModel(leftHandModel, leftHandContainer, weaponModels);
@@ -79,6 +79,7 @@ public class CharacterModel : MonoBehaviour
             var comp = newRightHandModel.GetComponent<WeaponDamageLaunchTransform>();
             if (comp != null && comp.transform != null)
                 rightDamageLaunchTransform = comp.transform;
+           
             TempAnimator.SetBool("IsEqup", true);
         }
         if (newLeftHandModel != null)
@@ -89,8 +90,7 @@ public class CharacterModel : MonoBehaviour
             TempAnimator.SetBool("IsEqup", true);
         }
 
-        
-        
+        TempAnimator.runtimeAnimatorController = newRightHandModel.GetComponentInChildren<WeaponStates>().weaponData.AnimationsController;
     }
 
     public void SetCustomModel(int position, GameObject model)

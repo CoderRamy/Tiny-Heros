@@ -1066,7 +1066,7 @@ public class CharacterEntity : BaseNetworkGameCharacter
     protected virtual void RpcUpdateSelectCharacter(string selectCharacter)
     {
         _selectCharacter = selectCharacter;
-
+        Debug.Log("RpcUpdateSelectCharacter");
         if (characterModel != null)
             Destroy(characterModel.gameObject);
         characterData = GameInstance.GetCharacter(selectCharacter);
