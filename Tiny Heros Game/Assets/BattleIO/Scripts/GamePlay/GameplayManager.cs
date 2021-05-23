@@ -44,7 +44,16 @@ public class GameplayManager : PunBehaviour
     public struct Props
     {
         public GameObject _Props;
-        public SimpleSphereData SpawnZone;
+        public SimpleCubeData SpawnZone;
+        public int Count;
+    }
+    public Weapons[] _Weapons;
+    [System.Serializable]
+    public struct Weapons
+    {
+        public string WeaponName;
+        public GameObject _Weapons;
+        public SimpleCubeData SpawnZone;
         public int Count;
     }
     protected virtual void Awake()
@@ -93,7 +102,8 @@ public class GameplayManager : PunBehaviour
         }
 
         SpawnProps();
-        Debug.Log("5");
+        SpawnWeapons();
+  
     }
 
     public void SpawnPowerUp(string prefabName)
@@ -111,17 +121,34 @@ public class GameplayManager : PunBehaviour
 
     public void SpawnProps()
     {
-        Debug.Log("1");
         if (!PhotonNetwork.isMasterClient)
             return;
-        Debug.Log("2");
+
         for (int i = 0; i < _Props.Length; i++)
         {
-            Debug.Log("3");
             for (int x = 0; x < _Props[i].Count; x++)
             {
-                var _prop = PhotonNetwork.InstantiateSceneObject(_Props[i]._Props.name, _Props[i].SpawnZone.GetRandomPosition(), Quaternion.identity, 0, new object[0]);
-                Debug.Log("4");
+                if (_Props[i].SpawnZone != null)
+                {
+                    var _prop = PhotonNetwork.InstantiateSceneObject(_Props[i]._Props.name, _Props[i].SpawnZone.GetRandomPosition(), Quaternion.identity, 0, new object[0]);
+                    _prop.transform.SetParent(_Props[i].SpawnZone.transform);
+
+                }
+            }
+        }
+    }
+
+    public void SpawnWeapons()
+    {
+        if (!PhotonNetwork.isMasterClient)
+            return;
+
+        for (int i = 0; i < _Weapons.Length; i++)
+        {
+            for (int x = 0; x < _Weapons[i].Count; x++)
+            {
+                var _prop = PhotonNetwork.InstantiateSceneObject(_Weapons[i]._Weapons.name, _Weapons[i].SpawnZone.GetRandomPosition(), _Weapons[i]._Weapons.transform.rotation, 0, new object[0]);
+                _prop.transform.SetParent(_Weapons[i].SpawnZone.transform);
             }
         }
     }

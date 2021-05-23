@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -18,12 +19,8 @@ MonoBehaviour:
   price:
     id: 
     amount: 0
-  canBuyOnlyOnce: 0
+  canBuyOnlyOnce: 1
   isLock: 0
-  addHp: 0
-  addAttack: 0
-  addDefend: 0
-  addMoveSpeed: 0
   stats:
     addHp: 0
     addAttack: 0
@@ -35,4 +32,4 @@ MonoBehaviour:
     addDamageRateLeechHp: 0
     addSpreadDamages: 0
   modelObject: {fileID: 114568944422771768, guid: 4958475fa962ec249bdc16573623a452,
-    type: 2}
+    type: 3}

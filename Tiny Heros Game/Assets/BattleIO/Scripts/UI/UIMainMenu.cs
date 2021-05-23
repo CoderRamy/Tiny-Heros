@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIMainMenu : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class UIMainMenu : MonoBehaviour
     public Text textDamageRateLeechHp;
     public Text textSpreadDamages;
     public InputField inputName;
+    public TMP_Text CharacterName;
     public Transform characterModelTransform;
     private int selectCharacter = 0;
     private int selectHead = 0;
@@ -88,6 +90,7 @@ public class UIMainMenu : MonoBehaviour
     private void Start()
     {
         inputName.text = PlayerSave.GetPlayerName();
+        CharacterName.text = PlayerSave.GetPlayerName();
         SelectHead = PlayerSave.GetHead();
         SelectCharacter = PlayerSave.GetCharacter();
         SelectWeapon = PlayerSave.GetWeapon();

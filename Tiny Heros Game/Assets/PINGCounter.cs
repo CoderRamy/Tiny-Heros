@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Text))]
+
 public class PINGCounter : MonoBehaviour
 {
     public Text m_Text;

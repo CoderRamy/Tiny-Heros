@@ -26,6 +26,20 @@ public class CharacterModel : MonoBehaviour
     private Transform leftDamageLaunchTransform;
 
     private readonly Dictionary<int, Transform> customModelContainers = new Dictionary<int, Transform>();
+
+
+    public void Start()
+    {
+        //if (weaponData == null)
+        //{
+        //    tempAnimator.SetBool("IsEqup", false);
+        //}
+        //else
+        //{
+        //    tempAnimator.SetBool("IsEqup", true);
+        //}
+    }
+
     public Dictionary<int, Transform> CustomModelContainers
     {
         get
@@ -52,6 +66,7 @@ public class CharacterModel : MonoBehaviour
 
     public void SetWeaponModel(GameObject rightHandModel, GameObject leftHandModel, GameObject shieldModel)
     {
+        
         ClearGameObjects(weaponModels);
         var newRightHandModel = AddModel(rightHandModel, rightHandContainer, weaponModels);
         var newLeftHandModel = AddModel(leftHandModel, leftHandContainer, weaponModels);
@@ -64,13 +79,18 @@ public class CharacterModel : MonoBehaviour
             var comp = newRightHandModel.GetComponent<WeaponDamageLaunchTransform>();
             if (comp != null && comp.transform != null)
                 rightDamageLaunchTransform = comp.transform;
+            TempAnimator.SetBool("IsEqup", true);
         }
         if (newLeftHandModel != null)
         {
             var comp = newLeftHandModel.GetComponent<WeaponDamageLaunchTransform>();
             if (comp != null && comp.transform != null)
                 leftDamageLaunchTransform = comp.transform;
+            TempAnimator.SetBool("IsEqup", true);
         }
+
+        
+        
     }
 
     public void SetCustomModel(int position, GameObject model)
