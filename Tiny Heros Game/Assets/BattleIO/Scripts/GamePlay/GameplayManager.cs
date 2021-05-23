@@ -40,6 +40,13 @@ public class GameplayManager : PunBehaviour
     public readonly Dictionary<string, PowerUpEntity> powerUpEntities = new Dictionary<string, PowerUpEntity>();
     public readonly Dictionary<string, CharacterAttributes> attributes = new Dictionary<string, CharacterAttributes>();
     public Props[] _Props;
+
+    [Header("Game Distance")]
+    public float randomMoveDistanceX_From = 70f;
+    public float randomMoveDistanceX_TO = -70f;
+    public float randomMoveDistanceZ_From = 70f;
+    public float randomMoveDistanceZ_TO = -70f;
+
     [System.Serializable]
     public struct Props
     {

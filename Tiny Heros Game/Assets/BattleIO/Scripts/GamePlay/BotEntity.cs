@@ -26,7 +26,7 @@ public class BotEntity : CharacterEntity
     public const float ReachedTargetDistance = 0.1f;
     public float updateMovementDuration = 2;
     public float attackDuration = 0;
-    public float randomMoveDistance = 5f;
+
     public float detectEnemyDistance = 2f;
     public float turnSpeed = 5f;
     public bool useCustomMoveSpeed;
@@ -42,6 +42,7 @@ public class BotEntity : CharacterEntity
     private float lastAttackTime;
     private bool isWallHit;
     public bool isPickupWeapon;
+    private float lastCircleCheckTime;
 
     protected override void Init()
     {
@@ -56,6 +57,7 @@ public class BotEntity : CharacterEntity
             ServerSpawn(false);
             lastUpdateMovementTime = Time.unscaledTime - updateMovementDuration;
             lastAttackTime = Time.unscaledTime - attackDuration;
+             
         }
     }
 
@@ -92,18 +94,15 @@ public class BotEntity : CharacterEntity
 
             if (isPickupWeapon)
             {
-                
+
             }
             else
             {
-                            targetPosition = new Vector3(
-                TempTransform.position.x + Random.Range(-randomMoveDistance, randomMoveDistance),
+                targetPosition = new Vector3(
+                TempTransform.position.x + Random.Range(GameplayManager.Singleton.randomMoveDistanceX_From, GameplayManager.Singleton.randomMoveDistanceX_TO),
                 0,
-                TempTransform.position.z + Random.Range(-randomMoveDistance, randomMoveDistance));
+                TempTransform.position.z + Random.Range(GameplayManager.Singleton.randomMoveDistanceZ_From, GameplayManager.Singleton.randomMoveDistanceZ_TO));
             }
-
-
-
 
             isWallHit = false;
         }
