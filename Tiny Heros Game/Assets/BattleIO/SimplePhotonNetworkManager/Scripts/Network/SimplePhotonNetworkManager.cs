@@ -264,6 +264,7 @@ public class SimplePhotonNetworkManager : PunBehaviour
     [PunRPC]
     protected virtual void RpcAddPlayer()
     {
+        Debug.Log("RpcAddPlayer");
         var position = Vector3.zero;
         var rotation = Quaternion.identity;
         RandomStartPoint(out position, out rotation);

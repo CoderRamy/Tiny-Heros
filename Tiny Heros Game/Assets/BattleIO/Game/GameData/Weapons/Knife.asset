@@ -45,6 +45,8 @@ MonoBehaviour:
   damagePrefab: {fileID: 114720440324133354, guid: 7b04fff58321c264eba96868b87778c3,
     type: 3}
   attackFx: []
+  AnimationsController: {fileID: 9100000, guid: a06d4e510782ad4489616f0fe14a5ec4,
+    type: 2}
   weaponRank: 0
   attackType: 1
   OriginAmmo: 50

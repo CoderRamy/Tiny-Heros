@@ -71,6 +71,7 @@ public class GameInstance : BaseNetworkGameInstance
         var weapon = PlayerSave.GetWeapon();
         if (weapon < 0 || weapon >= AvailableWeapons.Count)
             PlayerSave.SetWeapon(0);
+      
     }
 
     public void UpdateAvailableItems()
