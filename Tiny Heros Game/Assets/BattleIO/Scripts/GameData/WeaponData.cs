@@ -17,6 +17,8 @@ public class WeaponData : ItemData
     public AudioClip[] attackFx;
     public readonly Dictionary<int, AttackAnimation> AttackAnimations = new Dictionary<int, AttackAnimation>();
 
+    public UnityEditor.Animations.AnimatorController AnimationsController;
+
     public WeaponRank weaponRank;
     public AttackType attackType;
     public int OriginAmmo;
