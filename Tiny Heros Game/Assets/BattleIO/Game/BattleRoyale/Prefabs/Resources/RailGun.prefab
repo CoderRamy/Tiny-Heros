@@ -29,7 +29,7 @@ MonoBehaviour:
   CurentTimer: 0
   Timer: 2
   IsEquip: 0
-  Loader: {fileID: 0}
+  Loader: {fileID: 2029028361353655372}
   Ammo: 0
 --- !u!114 &2029028361710003198
 MonoBehaviour:
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  renderer: {fileID: 0}
+  renderer: {fileID: 262311919114111287}
   rotationVector: {x: 0, y: 2, z: 0}
 --- !u!1 &2029028360361637317
 GameObject:
@@ -9683,7 +9683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34060165, g: 0.8113208, b: 0.52270466, a: 1}
+  m_Color: {r: 0.8117647, g: 0.5568628, b: 0.34117648, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14605,6 +14605,12 @@ GameObject:
 --- !u!4 &262311919127549971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2273022344544402400, guid: 1a88eb4a44f40fa43a6a0891576b68af,
+    type: 3}
+  m_PrefabInstance: {fileID: 2029028361710003187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &262311919114111287 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2273022344556391108, guid: 1a88eb4a44f40fa43a6a0891576b68af,
     type: 3}
   m_PrefabInstance: {fileID: 2029028361710003187}
   m_PrefabAsset: {fileID: 0}

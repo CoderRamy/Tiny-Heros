@@ -17,10 +17,10 @@ MonoBehaviour:
   title: 
   description: 
   price:
-    id: 
-    amount: 0
+    id: GOLD
+    amount: 1000
   canBuyOnlyOnce: 1
-  isLock: 1
+  isLock: 0
   stats:
     addHp: 0
     addAttack: 0
@@ -44,6 +44,7 @@ MonoBehaviour:
   damagePrefab: {fileID: 114720440324133354, guid: f01063439f0dd3346a5e747e72b8f85f,
     type: 3}
   attackFx: []
+  AnimationsController: {fileID: 0}
   weaponRank: 0
   attackType: 0
   OriginAmmo: 50

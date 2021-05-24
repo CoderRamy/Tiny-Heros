@@ -17,20 +17,20 @@ MonoBehaviour:
   title: 
   description: 
   price:
-    id: 
-    amount: 0
+    id: GOLD
+    amount: 1000
   canBuyOnlyOnce: 1
-  isLock: 1
+  isLock: 0
   stats:
     addHp: 0
-    addAttack: 0
+    addAttack: 20
     addDefend: 0
     addMoveSpeed: 0
     addExpRate: 0
     addScoreRate: 0
     addHpRecoveryRate: 0
     addDamageRateLeechHp: 0
-    addSpreadDamages: 0
+    addSpreadDamages: 10
   rightHandObject: {fileID: 6106662833833327243, guid: 12e33a200d0c965438c1e3565e8d890b,
     type: 3}
   leftHandObject: {fileID: 2196376887939949475, guid: 704e6e56343131a4f8f62d401e3c58c6,
@@ -42,7 +42,7 @@ MonoBehaviour:
     launchDuration: 0.34
     speed: 1
     isAnimationForLeftHandWeapon: 0
-  damagePrefab: {fileID: 114720440324133354, guid: 7b04fff58321c264eba96868b87778c3,
+  damagePrefab: {fileID: -117004470148991972, guid: f24c64a3ba9a19f46a1445aa3a29066a,
     type: 3}
   attackFx: []
   AnimationsController: {fileID: 9100000, guid: c84f078e81013ba48b1e62865009d5dd,

@@ -17,13 +17,13 @@ MonoBehaviour:
   title: 
   description: 
   price:
-    id: 
-    amount: 0
+    id: GOLD
+    amount: 1000
   canBuyOnlyOnce: 1
-  isLock: 1
+  isLock: 0
   stats:
     addHp: 0
-    addAttack: 0
+    addAttack: 20
     addDefend: 0
     addMoveSpeed: 0
     addExpRate: 0
