@@ -28,5 +28,5 @@ MonoBehaviour:
     type: 3}
   overrideBotPrefab: {fileID: 114440289766304596, guid: f69e01208e5013f4185f01b13c72068f,
     type: 3}
-  fillBots: 10
+  fillBots: 20
   endMatchCountDown: 1

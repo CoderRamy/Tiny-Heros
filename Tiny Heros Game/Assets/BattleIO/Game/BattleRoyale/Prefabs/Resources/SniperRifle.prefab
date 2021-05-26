@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34060165, g: 0.8113208, b: 0.52270466, a: 1}
+  m_Color: {r: 0.8117647, g: 0.5568628, b: 0.34117648, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -184,8 +184,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4961736434837211923}
   - component: {fileID: 4961736434837211924}
-  - component: {fileID: 4961736434837211925}
-  - component: {fileID: 4961736434837211926}
   m_Layer: 0
   m_Name: SniperRifle
   m_TagString: Untagged
@@ -237,37 +235,6 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
---- !u!114 &4961736434837211925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4961736434837211927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44b20ed94fab12f47ac1c952a4f52885, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 1b258045c95acdf4791975c0a4ed0feb, type: 2}
-  CurentTimer: 0
-  Timer: 2
-  IsEquip: 0
-  Loader: {fileID: 0}
-  Ammo: 0
---- !u!135 &4961736434837211926
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4961736434837211927}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4961736435233066237
 GameObject:
   m_ObjectHideFlags: 0
@@ -14527,6 +14494,24 @@ MonoBehaviour:
   speed: 100
   renderer: {fileID: 7693403528634212404}
   rotationVector: {x: 0, y: 2, z: 0}
+--- !u!114 &9138785800371260952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7693403528631959284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44b20ed94fab12f47ac1c952a4f52885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponData: {fileID: 11400000, guid: 1b258045c95acdf4791975c0a4ed0feb, type: 2}
+  CurentTimer: 0
+  Timer: 2
+  IsEquip: 0
+  Loader: {fileID: 4961736434347412587}
+  Ammo: 0
 --- !u!1001 &4961736434788074898
 PrefabInstance:
   m_ObjectHideFlags: 0

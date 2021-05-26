@@ -5677,7 +5677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &530135006
 Transform:
   m_ObjectHideFlags: 0
@@ -13549,6 +13549,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1619107164911674, guid: c86857d22734b86408451ea6ce9ed4ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4707056450429310, guid: c86857d22734b86408451ea6ce9ed4ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13604,7 +13608,7 @@ PrefabInstance:
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: _Weapons.Array.size
-      value: 9
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
@@ -14065,12 +14069,12 @@ PrefabInstance:
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: waitForPlayersDurationFrom
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: waitForPlayersDurationTo
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
@@ -14095,7 +14099,7 @@ PrefabInstance:
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: minAttack
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
@@ -14221,6 +14225,174 @@ PrefabInstance:
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: _Weapons.Array.data[8].Count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[9].WeaponName
+      value: CrossBow
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[9]._Weapons
+      value: 
+      objectReference: {fileID: 8380808711950147131, guid: 9da71ca2f1e9d4248a960216b9a6e7fb,
+        type: 3}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[9].SpawnZone
+      value: 
+      objectReference: {fileID: 1848773149}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[9].Count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[10].WeaponName
+      value: IceGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[10]._Weapons
+      value: 
+      objectReference: {fileID: 1863949888240355703, guid: 7bd25a6a9d2c6d945836dd80c0698458,
+        type: 3}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[10].SpawnZone
+      value: 
+      objectReference: {fileID: 1848773149}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[10].Count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[11].WeaponName
+      value: MiniGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[11]._Weapons
+      value: 
+      objectReference: {fileID: 622284336321614880, guid: 10cf0d2d5eed2a345ae4e718b8b207d3,
+        type: 3}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[11].SpawnZone
+      value: 
+      objectReference: {fileID: 1848773149}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[11].Count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[12].WeaponName
+      value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[12]._Weapons
+      value: 
+      objectReference: {fileID: 8528202595839781327, guid: d9bab808981493a439455ba8ba6cce5c,
+        type: 3}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[12].SpawnZone
+      value: 
+      objectReference: {fileID: 1848773149}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[12].Count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[13].WeaponName
+      value: RailGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[13]._Weapons
+      value: 
+      objectReference: {fileID: 2029028361396351661, guid: 531f80ae3037de2418ba5492ba194f3b,
+        type: 3}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[13].SpawnZone
+      value: 
+      objectReference: {fileID: 1848773149}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[13].Count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[14].WeaponName
+      value: Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[14]._Weapons
+      value: 
+      objectReference: {fileID: 5580153890673696666, guid: a88ca959ec6319c42a0a952679851182,
+        type: 3}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[14].SpawnZone
+      value: 
+      objectReference: {fileID: 1848773149}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[14].Count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[15].WeaponName
+      value: SMG
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[15]._Weapons
+      value: 
+      objectReference: {fileID: 90797536581675794, guid: a5d87832f86e29d4890db8df2c17683c,
+        type: 3}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[15].SpawnZone
+      value: 
+      objectReference: {fileID: 1848773149}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[15].Count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[16].WeaponName
+      value: SniperRifle
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[16]._Weapons
+      value: 
+      objectReference: {fileID: 4961736434837211927, guid: 58c01bb5a410b4b4096391cd8012823e,
+        type: 3}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[16].SpawnZone
+      value: 
+      objectReference: {fileID: 1848773149}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[16].Count
       value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -21938,13 +22110,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.22591e-40, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0

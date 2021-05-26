@@ -15,19 +15,20 @@ MonoBehaviour:
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
   previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
   title: BasicMale
-  description: he is always angry
+  description: Good character description often tells us about more than the person
+    described.
   price:
-    id: 
-    amount: 0
+    id: GOLD
+    amount: 10
   canBuyOnlyOnce: 1
   isLock: 0
   stats:
-    addHp: 0
-    addAttack: 0
-    addDefend: 0
-    addMoveSpeed: 0
-    addExpRate: 0
-    addScoreRate: 0
+    addHp: 100
+    addAttack: 10
+    addDefend: 2
+    addMoveSpeed: 1
+    addExpRate: 1
+    addScoreRate: 1
     addHpRecoveryRate: 0
     addDamageRateLeechHp: 0
     addSpreadDamages: 0

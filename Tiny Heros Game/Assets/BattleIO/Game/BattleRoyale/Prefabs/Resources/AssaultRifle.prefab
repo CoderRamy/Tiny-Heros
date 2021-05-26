@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34060165, g: 0.8113208, b: 0.52270466, a: 1}
+  m_Color: {r: 0.8117647, g: 0.5568628, b: 0.34117648, a: 0.4627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -246,6 +246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicZoneWhite
       objectReference: {fileID: 0}
+    - target: {fileID: 131526, guid: 22c40b612022044449a3cead95148403, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 476476, guid: 22c40b612022044449a3cead95148403, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.01
@@ -289,34 +293,6 @@ PrefabInstance:
     - target: {fileID: 476476, guid: 22c40b612022044449a3cead95148403, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 476476, guid: 22c40b612022044449a3cead95148403, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 476476, guid: 22c40b612022044449a3cead95148403, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 476476, guid: 22c40b612022044449a3cead95148403, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 19880876, guid: 22c40b612022044449a3cead95148403, type: 3}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 19880876, guid: 22c40b612022044449a3cead95148403, type: 3}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 19880876, guid: 22c40b612022044449a3cead95148403, type: 3}
-      propertyPath: InitialModule.startRotationX.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 19880876, guid: 22c40b612022044449a3cead95148403, type: 3}
-      propertyPath: InitialModule.startRotationY.minMaxState
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22c40b612022044449a3cead95148403, type: 3}

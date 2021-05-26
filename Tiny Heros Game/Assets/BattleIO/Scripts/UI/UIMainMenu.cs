@@ -132,6 +132,7 @@ public class UIMainMenu : MonoBehaviour
         if (characterModel != null)
             Destroy(characterModel.gameObject);
         characterData = GameInstance.GetAvailableCharacter(SelectCharacter);
+        UICharacterSelect.instance.characterData = characterData;
         if (characterData == null || characterData.modelObject == null)
             return;
         characterModel = Instantiate(characterData.modelObject, characterModelTransform);
@@ -143,6 +144,9 @@ public class UIMainMenu : MonoBehaviour
         if (weaponData != null)
             characterModel.SetWeaponModel(weaponData.rightHandObject, weaponData.leftHandObject, weaponData.shieldObject);
         characterModel.gameObject.SetActive(true);
+
+
+
     }
 
     private void UpdateHead()

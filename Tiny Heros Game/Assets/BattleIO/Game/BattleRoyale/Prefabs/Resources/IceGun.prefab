@@ -25,11 +25,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44b20ed94fab12f47ac1c952a4f52885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: e85a78f7fe910014eadc4e183ce214b6, type: 2}
+  weaponData: {fileID: 11400000, guid: 47c32b437945fa2499a6a016a208d8ff, type: 2}
   CurentTimer: 0
   Timer: 2
   IsEquip: 0
-  Loader: {fileID: 0}
+  Loader: {fileID: 1863949887954823959}
   Ammo: 0
 --- !u!114 &1863949887476427152
 MonoBehaviour:
@@ -4853,7 +4853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34060165, g: 0.8113208, b: 0.52270466, a: 1}
+  m_Color: {r: 0.8117647, g: 0.5568628, b: 0.34117648, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
