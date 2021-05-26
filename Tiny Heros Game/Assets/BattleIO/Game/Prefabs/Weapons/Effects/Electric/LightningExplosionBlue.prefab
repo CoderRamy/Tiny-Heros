@@ -14466,6 +14466,7 @@ GameObject:
   - component: {fileID: 4955718396948210755}
   - component: {fileID: 4955718396934944055}
   - component: {fileID: 4955718396934406447}
+  - component: {fileID: -3112402431379052176}
   m_Layer: 0
   m_Name: LightningExplosionBlue
   m_TagString: Untagged
@@ -19420,6 +19421,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 0.3
   killAfterLife: 1
+--- !u!114 &-3112402431379052176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4955718396941115483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523f4e3a6f046cf42a9e1ae6ba6cf5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 0
+  spawnRelateToTransform: 0
 --- !u!1 &4955718396941135237
 GameObject:
   m_ObjectHideFlags: 0

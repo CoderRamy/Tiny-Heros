@@ -4847,6 +4847,7 @@ GameObject:
   - component: {fileID: 4968969989090187319}
   - component: {fileID: 4968969989070362851}
   - component: {fileID: 4968969989081837901}
+  - component: {fileID: 4985956046217897821}
   m_Layer: 0
   m_Name: BulletExplosionPink
   m_TagString: Untagged
@@ -9745,6 +9746,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomPercent: 20
+--- !u!114 &4985956046217897821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968969989074819785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523f4e3a6f046cf42a9e1ae6ba6cf5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 0
+  spawnRelateToTransform: 0
 --- !u!1 &4968969989074845947
 GameObject:
   m_ObjectHideFlags: 0

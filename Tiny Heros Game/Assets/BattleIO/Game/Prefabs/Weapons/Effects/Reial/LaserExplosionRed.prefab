@@ -14433,6 +14433,7 @@ GameObject:
   - component: {fileID: 5636184782334327091}
   - component: {fileID: 5636184782332264099}
   - component: {fileID: 5636184782312159155}
+  - component: {fileID: -4736251389134658575}
   m_Layer: 0
   m_Name: LaserExplosionRed
   m_TagString: Untagged
@@ -19356,6 +19357,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &-4736251389134658575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5636184782314579493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523f4e3a6f046cf42a9e1ae6ba6cf5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 0
+  spawnRelateToTransform: 0
 --- !u!1 &5636184782314600301
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,12 @@ PrefabInstance:
       propertyPath: speed
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 4782365358324804248, guid: 35188a83646ff564592783d8482f6088,
+        type: 3}
+      propertyPath: explodeEffectPrefab
+      value: 
+      objectReference: {fileID: -2065629273473959479, guid: 6214cf99e8492e94886000a9a534d782,
+        type: 3}
     - target: {fileID: 8282919144705286913, guid: 35188a83646ff564592783d8482f6088,
         type: 3}
       propertyPath: impactParticle
