@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c3ea8f4b6baad499a9808da2129f8d, type: 3}
+  m_Name: Jester
+  m_EditorClassIdentifier: 
+  iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
+  previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
+  title: Jester
+  description: Good character description often tells us about more than the person
+    described.
+  price:
+    id: GOLD
+    amount: 1200
+  canBuyOnlyOnce: 1
+  isLock: 0
+  stats:
+    addHp: 100
+    addAttack: 10
+    addDefend: 2
+    addMoveSpeed: 1
+    addExpRate: 1
+    addScoreRate: 1
+    addHpRecoveryRate: 0
+    addDamageRateLeechHp: 0
+    addSpreadDamages: 0
+  modelObject: {fileID: -4694665037226250374, guid: ae05c471bf45b5b4ab88880746e9b69c,
+    type: 3}

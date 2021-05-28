@@ -58,6 +58,8 @@ public class BRGameplayManager : GameplayManager
     public BRPattern[] patterns;
     public GameObject circleObject;
 
+  
+
     #region Sync Vars
     public int currentPattern
     {

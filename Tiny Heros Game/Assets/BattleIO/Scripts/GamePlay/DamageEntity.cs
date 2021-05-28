@@ -131,7 +131,7 @@ public class DamageEntity : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<PowerUpEntity>() != null || other.GetComponent<DamageEntity>())
+        if (other.GetComponent<PowerUpEntity>() != null || other.GetComponent<DamageEntity>() || other.GetComponent<EquipWeapon>())
             return;
 
         var otherCharacter = other.GetComponent<CharacterEntity>();
