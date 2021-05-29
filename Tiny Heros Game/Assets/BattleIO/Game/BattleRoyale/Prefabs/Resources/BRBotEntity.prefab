@@ -129,7 +129,6 @@ MonoBehaviour:
   weaponData: {fileID: 0}
   updateMovementDuration: 3
   attackDuration: 0
-  randomMoveDistance: 5
   detectEnemyDistance: 10
   turnSpeed: 5
   useCustomMoveSpeed: 0
@@ -296,7 +295,7 @@ GameObject:
   - component: {fileID: 114479413384412622}
   - component: {fileID: 114413542013216624}
   - component: {fileID: 114573541703837568}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: HpText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5334,7 +5333,7 @@ GameObject:
   - component: {fileID: 224595931252575658}
   - component: {fileID: 222859218664187806}
   - component: {fileID: 114084629667218038}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: HpFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5411,7 +5410,7 @@ GameObject:
   - component: {fileID: 114649335929855102}
   - component: {fileID: 114057568054619384}
   - component: {fileID: 114384087785090586}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5516,7 +5515,7 @@ GameObject:
   - component: {fileID: 224640683222832512}
   - component: {fileID: 223167391763020334}
   - component: {fileID: 114802571888432142}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5700,7 +5699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224886629198690158}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10501,7 +10500,7 @@ GameObject:
   - component: {fileID: 114659412335084072}
   - component: {fileID: 114107586521108314}
   - component: {fileID: 114832471727428270}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

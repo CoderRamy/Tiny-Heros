@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2240273026516482894}
   - component: {fileID: 2240273026515155822}
   - component: {fileID: 2240273026514057646}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FlameThrower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3859616614809904249}
   - component: {fileID: -3144874885572235336}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FlameThrower
   m_TagString: Untagged
   m_Icon: {fileID: 0}

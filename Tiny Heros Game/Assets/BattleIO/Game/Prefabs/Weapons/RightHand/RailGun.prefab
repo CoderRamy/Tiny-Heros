@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6603709442177317842}
   - component: {fileID: -2448186137878696248}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RailGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7167937567224892969}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7167937567224892971}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7167937567224892973}
   - component: {fileID: 7167937567219326731}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RailGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7167937567224892975}
   - component: {fileID: 7167937567215116747}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RailGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

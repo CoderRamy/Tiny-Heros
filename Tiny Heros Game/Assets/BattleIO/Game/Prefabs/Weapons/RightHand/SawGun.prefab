@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4575474564899182939}
   - component: {fileID: 4621072156689425675}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SawGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7585819665086834176}
   - component: {fileID: 7585819665079372260}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SawGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7585819665086834178}
   - component: {fileID: 7585819665083627300}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SawGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7585819665086834180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7585819665086834182}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint25
   m_TagString: Untagged
   m_Icon: {fileID: 0}

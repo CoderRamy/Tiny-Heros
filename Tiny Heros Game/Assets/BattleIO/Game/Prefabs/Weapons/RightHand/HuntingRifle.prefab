@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2573770515758909849}
   - component: {fileID: 2573770515757615545}
   - component: {fileID: 2573770515756485497}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HuntingRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7899424386960087469}
   - component: {fileID: 8931670133570833273}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HuntingRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

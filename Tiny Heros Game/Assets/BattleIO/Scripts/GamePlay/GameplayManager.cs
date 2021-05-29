@@ -60,7 +60,7 @@ public class GameplayManager : PunBehaviour
     {
         public string WeaponName;
         public GameObject _Weapons;
-        public SimpleCubeData SpawnZone;
+        public SimpleCubeData[] SpawnZone;
         public int Count;
     }
     protected virtual void Awake()
@@ -154,8 +154,13 @@ public class GameplayManager : PunBehaviour
         {
             for (int x = 0; x < _Weapons[i].Count; x++)
             {
-                var _prop = PhotonNetwork.InstantiateSceneObject(_Weapons[i]._Weapons.name, _Weapons[i].SpawnZone.GetRandomPosition(), _Weapons[i]._Weapons.transform.rotation, 0, new object[0]);
-                _prop.transform.SetParent(_Weapons[i].SpawnZone.transform);
+                if(_Weapons[i].SpawnZone != null)
+                {
+                    var RandomZone = Random.Range(0, _Weapons[i].SpawnZone.Length);
+                    var _prop = PhotonNetwork.InstantiateSceneObject(_Weapons[i]._Weapons.name, _Weapons[i].SpawnZone[Random.Range(0, _Weapons[i].SpawnZone.Length)].GetRandomPosition(), _Weapons[i]._Weapons.transform.rotation, 0, new object[0]);
+                    _prop.transform.SetParent(_Weapons[i].SpawnZone[RandomZone].transform);
+                }
+
             }
         }
     }

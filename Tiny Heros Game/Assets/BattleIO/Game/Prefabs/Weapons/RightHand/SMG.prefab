@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1940320795362778212}
   - component: {fileID: 1940320795361451076}
   - component: {fileID: 1940320795360484996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SMG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2705760319766760195}
   - component: {fileID: 6676559164546849693}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SMG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
