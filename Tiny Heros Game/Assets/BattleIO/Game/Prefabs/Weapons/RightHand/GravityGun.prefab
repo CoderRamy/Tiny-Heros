@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7934099757149391821}
   - component: {fileID: 3444566266815983272}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GravityGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 6935681124075348207}
   - component: {fileID: 6935681124074053839}
   - component: {fileID: 6935681124073054735}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GravityGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

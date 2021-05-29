@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1597355838449953321}
   - component: {fileID: 1597355838440359369}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bazooka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1597355838449953323}
   - component: {fileID: 1597355838444649225}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bazooka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1597355838449953325}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1597355838449953327}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3114504984964714877}
   - component: {fileID: -2877219407732898554}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bazooka
   m_TagString: Untagged
   m_Icon: {fileID: 0}

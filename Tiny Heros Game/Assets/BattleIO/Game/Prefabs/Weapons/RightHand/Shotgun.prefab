@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1229598623857833649}
   - component: {fileID: -7900758495130781113}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3272115537794553945}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3272115537794553947}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3272115537794553949}
   - component: {fileID: 3272115537799334267}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3272115537794553951}
   - component: {fileID: 3272115537803556795}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

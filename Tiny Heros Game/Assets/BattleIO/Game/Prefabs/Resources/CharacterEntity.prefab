@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224509465791944342}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChatEntity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 114737449752679006}
   m_Layer: 8
   m_Name: CharacterEntity
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,6 +162,7 @@ MonoBehaviour:
   nameText: {fileID: 114138376975115584}
   levelText: {fileID: 0}
   invincibleEffect: {fileID: 1553310069995314}
+  weaponData: {fileID: 0}
 --- !u!114 &114089907287624846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ GameObject:
   - component: {fileID: 224450018369621806}
   - component: {fileID: 222335606111348716}
   - component: {fileID: 114651340262531032}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChatText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +353,7 @@ GameObject:
   - component: {fileID: 222108272549649106}
   - component: {fileID: 114007336429068538}
   - component: {fileID: 114683357717679618}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +444,7 @@ GameObject:
   - component: {fileID: 222218583870499256}
   - component: {fileID: 114070231181228520}
   - component: {fileID: 114738678270182674}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -531,7 +532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224205415510400914}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,7 +572,7 @@ GameObject:
   - component: {fileID: 224047901222345868}
   - component: {fileID: 222875438218048352}
   - component: {fileID: 114944575699529802}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChatText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +651,7 @@ GameObject:
   - component: {fileID: 224046887870957084}
   - component: {fileID: 222404725392513582}
   - component: {fileID: 114304160113529932}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChatText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5487,7 +5488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224897218218643994}
   - component: {fileID: 95960533030167548}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Emoticon02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5630,7 +5631,7 @@ GameObject:
   - component: {fileID: 114774004258019824}
   - component: {fileID: 114861433665925644}
   - component: {fileID: 114412448813938324}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5790,7 +5791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224316255204821022}
   - component: {fileID: 95740066566829944}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Emoticon01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5846,7 +5847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224821201414136874}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChatBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5887,7 +5888,7 @@ GameObject:
   - component: {fileID: 114577477186445026}
   - component: {fileID: 114069393888710952}
   - component: {fileID: 114861477922317388}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: HpText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5995,7 +5996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224839786601057538}
   - component: {fileID: 95050548661108712}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Emoticon04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6052,7 +6053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224224796967357662}
   - component: {fileID: 95676244093301234}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Emoticon03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11011,7 +11012,7 @@ GameObject:
   - component: {fileID: 114138376975115584}
   - component: {fileID: 114734415472872532}
   - component: {fileID: 114199155333815624}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11123,7 +11124,7 @@ GameObject:
   - component: {fileID: 114024998612981904}
   - component: {fileID: 114124716560799474}
   - component: {fileID: 114051330295709700}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11256,7 +11257,7 @@ GameObject:
   - component: {fileID: 114893601951232044}
   - component: {fileID: 114316790702989398}
   - component: {fileID: 114375661245782322}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11391,7 +11392,7 @@ GameObject:
   - component: {fileID: 224923157316742356}
   - component: {fileID: 222669814921501020}
   - component: {fileID: 114666100061021068}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChatText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11473,7 +11474,7 @@ GameObject:
   - component: {fileID: 114846049841924038}
   - component: {fileID: 114819876734822228}
   - component: {fileID: 114876382044495558}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11605,7 +11606,7 @@ GameObject:
   - component: {fileID: 222823684582354942}
   - component: {fileID: 114876810987820314}
   - component: {fileID: 114755591551934708}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11696,7 +11697,7 @@ GameObject:
   - component: {fileID: 222873709974914484}
   - component: {fileID: 114595155284437574}
   - component: {fileID: 114858518303090114}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11786,7 +11787,7 @@ GameObject:
   - component: {fileID: 224029177630255982}
   - component: {fileID: 223468875765747780}
   - component: {fileID: 114087967992674238}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11861,7 +11862,7 @@ GameObject:
   - component: {fileID: 224449116677683090}
   - component: {fileID: 222074299972197068}
   - component: {fileID: 114018960811287330}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ChatText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11941,7 +11942,7 @@ GameObject:
   - component: {fileID: 222971535534089808}
   - component: {fileID: 114749698672249502}
   - component: {fileID: 114261342034152916}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12031,7 +12032,7 @@ GameObject:
   - component: {fileID: 224342525158090044}
   - component: {fileID: 222715555173548936}
   - component: {fileID: 114521862679689056}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: HpFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12109,7 +12110,7 @@ GameObject:
   - component: {fileID: 114635800496590246}
   - component: {fileID: 114032934691823006}
   - component: {fileID: 114869296973977950}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12273,7 +12274,7 @@ GameObject:
   - component: {fileID: 114662318246528584}
   - component: {fileID: 114075977613421562}
   - component: {fileID: 114241152177810190}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: BubblePart02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1569678978335014641}
   - component: {fileID: -7905673983186247629}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: IceGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 5978012520818564664}
   - component: {fileID: 5978012520815664664}
   - component: {fileID: 5978012520816794840}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: IceGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

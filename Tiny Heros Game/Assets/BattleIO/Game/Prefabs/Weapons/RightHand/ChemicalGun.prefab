@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5522575840744293521}
   - component: {fileID: 5522575840740869297}
   - component: {fileID: 5522575840741869169}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ChemicalGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1222470244280537377}
   - component: {fileID: 6244808249210426898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ChemicalGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

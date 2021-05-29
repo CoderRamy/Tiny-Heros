@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6378799074997034651}
   - component: {fileID: -5808554230680014134}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ElectricGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6402869609391692288}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6402869609391692290}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: joint18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6402869609391692292}
   - component: {fileID: 6402869609379695398}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ElectricGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6402869609391692294}
   - component: {fileID: 6402869609383949798}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ElectricGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

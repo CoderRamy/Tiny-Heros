@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3110606680432388886}
   - component: {fileID: 3110606680431618870}
   - component: {fileID: 3110606680430488054}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HMG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3793531999995332419}
   - component: {fileID: 7697000090380990275}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HMG
   m_TagString: Untagged
   m_Icon: {fileID: 0}

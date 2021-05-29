@@ -201,10 +201,10 @@ QualitySettings:
     skinWeights: 4
     textureQuality: 0
     anisotropicTextures: 2
-    antiAliasing: 2
+    antiAliasing: 0
     softParticles: 0
     softVegetation: 1
-    realtimeReflectionProbes: 1
+    realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 1
     vSyncCount: 1
     lodBias: 2
@@ -220,7 +220,8 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: 9c62ba6c2b8c8964889be9982be56bef,
+      type: 2}
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
     Android: 2

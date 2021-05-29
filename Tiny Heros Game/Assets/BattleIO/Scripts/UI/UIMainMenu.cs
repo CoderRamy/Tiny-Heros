@@ -18,7 +18,7 @@ public class UIMainMenu : MonoBehaviour
     public Text textHpRecoveryRate;
     public Text textDamageRateLeechHp;
     public Text textSpreadDamages;
-    public InputField inputName;
+    public TMP_InputField inputName;
     public TMP_Text CharacterName;
     public Transform characterModelTransform;
     private int selectCharacter = 0;
@@ -196,6 +196,7 @@ public class UIMainMenu : MonoBehaviour
     public void OnInputNameChanged(string eventInput)
     {
         PlayerSave.SetPlayerName(inputName.text);
+        CharacterName.text = inputName.text;
     }
 
     public void OnClickSaveData()

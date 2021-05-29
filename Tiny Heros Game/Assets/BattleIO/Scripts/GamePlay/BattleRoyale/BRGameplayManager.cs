@@ -176,7 +176,7 @@ public class BRGameplayManager : GameplayManager
         SpawnerMoveCountdown = 0;
         isInSpawnableArea = false;
         SpawnProps();
-        SpawnWeapons();
+        
     }
 
     public override bool CanRespawn(CharacterEntity character)
@@ -211,6 +211,7 @@ public class BRGameplayManager : GameplayManager
             CurrentCountdown -= Time.deltaTime;
         if (SpawnerMoveCountdown > 0)
             SpawnerMoveCountdown -= Time.deltaTime;
+  
     }
 
     private void UpdateGameState()
@@ -252,6 +253,8 @@ public class BRGameplayManager : GameplayManager
                         for (var i = 0; i < powerUp.amount; ++i)
                             SpawnPowerUp(powerUp.powerUpPrefab.name);
                     }
+
+                    SpawnWeapons();
                 }
                 break;
             case BRState.WaitingForFirstCircle:
@@ -319,7 +322,7 @@ public class BRGameplayManager : GameplayManager
                 break;
         }
     }
-
+    //CODER
     private void UpdateCircle()
     {
         if (currentState == BRState.Shrinking)
@@ -327,7 +330,16 @@ public class BRGameplayManager : GameplayManager
             var interp = (currentShrinkDuration - CurrentCountdown) / currentShrinkDuration;
             currentRadius = Mathf.Lerp(startShrinkRadius, nextRadius, interp);
             currentCenterPosition = Vector3.Lerp(startShrinkCenterPosition, nextCenterPosition, interp);
+
         }
+
+    }
+
+
+
+    public Vector3 GetCirclePosition(float currentRadius,Vector3 Center)
+    {
+        return Center + new Vector3(currentRadius, currentRadius, currentRadius);
     }
 
     private void UpdateSpawner()
