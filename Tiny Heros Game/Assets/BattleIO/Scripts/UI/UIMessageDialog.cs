@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class UIMessageDialog : UIBase {
-    public Text textMessage;
+    public TMP_Text textMessage;
     public void Show(string message)
     {
         if (textMessage != null)

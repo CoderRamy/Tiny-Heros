@@ -229,6 +229,9 @@ public abstract class BaseNetworkGameManager : SimplePhotonNetworkManager
 
     public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
     {
+        Debug.Log("OnPhotonPlayerConnected");
+
+
         if (!PhotonNetwork.isMasterClient)
             return;
 

@@ -193,8 +193,13 @@ public class SimplePhotonNetworkManager : PunBehaviour
     public override void OnJoinedLobby()
     {
         if (isLog) Debug.Log("OnJoinedLobby");
+
         if (onJoinedLobby != null)
+        {
             onJoinedLobby.Invoke();
+            //connect to API
+
+        }
     }
 
     public override void OnCreatedRoom()
