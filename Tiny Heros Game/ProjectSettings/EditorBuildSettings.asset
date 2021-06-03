@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/BattleIO/Game/Scenes/OldBattle.unity
     guid: a5cc9d207f9bf274bb65271eef7d334d
   - enabled: 1
-    path: Assets/GameScenes/BattleRoyale.unity
+    path: Assets/Game/Scenes/BattleRoyale.unity
     guid: 544be37376f7bc04fbd1f936db394efa
   m_configObjects: {}
