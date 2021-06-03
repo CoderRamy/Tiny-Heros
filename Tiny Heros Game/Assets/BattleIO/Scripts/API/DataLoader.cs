@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class DataLoader  {
 
+
+
     public IEnumerator LoadPlayerData()
     {
-        WWW PlayerData = new WWW(Env.ApiUrl + "categories"+"/123");
+        WWW PlayerData = new WWW(Env.ApiUrl + "player/row/"+ SystemInfo.deviceUniqueIdentifier);
         yield return PlayerData;
         Debug.Log(PlayerData.text);
         PlayerInfoData playerInfo = new PlayerInfoData();
         playerInfo = JsonUtility.FromJson<PlayerInfoData>(PlayerData.text);
-        Debug.Log(playerInfo.name);
+        Debug.Log(playerInfo.player.name);
         yield return playerInfo;
     }
 

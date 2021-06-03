@@ -6,6 +6,39 @@ using UnityEngine;
 public class DataModel : MonoBehaviour {
 
 
+
+    public IEnumerator DataBase_Register(string name)
+    {
+        Debug.Log("Player db name is : " + name);
+        WWWForm form = new WWWForm();
+        form.AddField("name", name);
+        form.AddField("device_id", SystemInfo.deviceUniqueIdentifier);
+        WWW www = new WWW(Env.ApiUrl + "player/register", form);
+        yield return www;
+        string callback_data = www.text;
+        Debug.Log("DataBase_Register" + callback_data);
+        PlayerInfoData CallBack = new PlayerInfoData();
+        CallBack = JsonUtility.FromJson<PlayerInfoData>(callback_data);
+        yield return CallBack;
+    }
+
+
+
+    public IEnumerator DataBase_Login()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("device_id", SystemInfo.deviceUniqueIdentifier);
+        WWW www = new WWW(Env.ApiUrl + "player/login", form);
+        yield return www;
+        string callback_data = www.text;
+        Debug.Log("DataBase_Login" + callback_data);
+        PlayerInfoData CallBack = new PlayerInfoData();
+        CallBack = JsonUtility.FromJson<PlayerInfoData>(callback_data);
+        yield return CallBack;
+    }
+
+
+
     public void DataBase_ContactUs(string name, string email, string mobile,string subject, string body)
     {
         WWWForm form = new WWWForm();
@@ -25,34 +58,7 @@ public class DataModel : MonoBehaviour {
 
     }
 
-    public IEnumerator DataBase_Register(string name, string email, string facebook_id, string password)
-    {
-        WWWForm form = new WWWForm();
-        form.AddField("name", name);
-        form.AddField("email", email);
-        form.AddField("password", password);
-        form.AddField("facebook_id", facebook_id);
-        WWW www = new WWW(Env.ApiUrl+"register", form);
-        yield return www;
-        string callback_data = www.text;
-        APICallBack CallBack = new APICallBack();
-        CallBack = JsonUtility.FromJson<APICallBack>(callback_data);
-        yield return CallBack;
-    }
-
-    public IEnumerator DataBase_Login(string email, string facebook_id, string password)
-    {
-        WWWForm form = new WWWForm();
-        form.AddField("email", email);
-        form.AddField("facebook_id", facebook_id);
-        form.AddField("password", password);
-        WWW www = new WWW(Env.ApiUrl+"login", form);
-        yield return www;
-        string callback_data = www.text;
-        APICallBack CallBack = new APICallBack();
-        CallBack = JsonUtility.FromJson<APICallBack>(callback_data);
-        yield return CallBack;
-    }
+ 
 
     public IEnumerator DataBase_AddPoints(string gameName, int userID,string userName, int points, string status,  string type)
     {

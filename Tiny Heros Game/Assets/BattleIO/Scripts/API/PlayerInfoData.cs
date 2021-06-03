@@ -5,6 +5,15 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerInfoData
 {
+    public int status;
+    public Player player;
+}
+
+[System.Serializable]
+
+public class Player
+{
+    public int id;
     public string name;
     public string device_id;
     public int facebook_id;
@@ -13,6 +22,7 @@ public class PlayerInfoData
     public int gold;
     public int gem;
     public int level;
-    public int status;
+    public float exp;
+    public string status;
+    public string token;
 }
-

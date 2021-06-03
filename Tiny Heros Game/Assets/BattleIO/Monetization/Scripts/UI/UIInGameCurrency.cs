@@ -15,7 +15,7 @@ public class UIInGameCurrency : MonoBehaviour
         if (MonetizationManager.Currencies.ContainsKey(currency.id))
         {
             var setting = MonetizationManager.Currencies[currency.id];
-            textCurrencyAmount.text = string.Format(displayFormat, currency.amount.ToString("N0"), setting.name, setting.symbol);
+           // textCurrencyAmount.text = string.Format(displayFormat, currency.amount.ToString("N0"), setting.name, setting.symbol);
         }
         else
             textCurrencyAmount.text = "N/A";

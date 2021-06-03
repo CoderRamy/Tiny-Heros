@@ -196,7 +196,7 @@ public class UIMainMenu : MonoBehaviour
     public void OnInputNameChanged(string eventInput)
     {
         PlayerSave.SetPlayerName(inputName.text);
-        CharacterName.text = inputName.text;
+       // CharacterName.text = inputName.text;
     }
 
     public void OnClickSaveData()

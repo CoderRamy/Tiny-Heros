@@ -46,6 +46,6 @@ MonoBehaviour:
   attackFx: []
   AnimationsController: {fileID: 9100000, guid: 5c34ab227f7ee12468fff3bebe173e26,
     type: 2}
-  weaponRank: 0
+  weaponRank: 2
   attackType: 1
   OriginAmmo: 50

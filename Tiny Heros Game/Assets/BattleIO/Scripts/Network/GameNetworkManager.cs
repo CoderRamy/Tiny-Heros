@@ -9,6 +9,7 @@ public class GameNetworkManager : BaseNetworkGameManager
         get { return SimplePhotonNetworkManager.Singleton as GameNetworkManager; }
     }
 
+
     [PunRPC]
     protected void RpcCharacterAttack(
         string weaponId, 

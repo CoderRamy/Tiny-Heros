@@ -23,7 +23,7 @@ MonoBehaviour:
   isLock: 0
   stats:
     addHp: 0
-    addAttack: 20
+    addAttack: 112
     addDefend: 0
     addMoveSpeed: 0
     addExpRate: 0

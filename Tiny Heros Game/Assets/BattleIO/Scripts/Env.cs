@@ -7,7 +7,7 @@ using UnityEngine;
 public static class Env 
 {
     //local
-    public static readonly string ApiUrl = "http://aljawfreals.com/public/api/";
+    public static readonly string ApiUrl = "http://localhost/TinyHeros-Backend/public/api/";
 
     public static readonly bool APP_DEBUG = true;
 }

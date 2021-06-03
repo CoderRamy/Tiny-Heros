@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.16788329, g: 0.21073541, b: 0.2899403, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6461,8 +6461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81149d578e8306a47942ef49cc7f06fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaSizeX: 140
-  areaSizeZ: 140
+  areaSizeX: 130
+  areaSizeZ: 130
 --- !u!4 &464949369
 Transform:
   m_ObjectHideFlags: 0
@@ -16838,6 +16838,7 @@ Transform:
   - {fileID: 1861658061}
   - {fileID: 160675217}
   - {fileID: 2010367092}
+  - {fileID: 2049821567}
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18738,17 +18739,17 @@ PrefabInstance:
         type: 3}
       propertyPath: _Weapons.Array.data[1].SpawnZone.Array.data[1]
       value: 
-      objectReference: {fileID: 1242196979}
+      objectReference: {fileID: 1861658062}
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: _Weapons.Array.data[1].SpawnZone.Array.data[2]
       value: 
-      objectReference: {fileID: 1861658062}
+      objectReference: {fileID: 2010367091}
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: _Weapons.Array.data[1].SpawnZone.Array.data[3]
       value: 
-      objectReference: {fileID: 160675218}
+      objectReference: {fileID: 1242196979}
     - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
         type: 3}
       propertyPath: _Weapons.Array.data[1].SpawnZone.Array.data[4]
@@ -18789,6 +18790,21 @@ PrefabInstance:
       propertyPath: _Weapons.Array.data[5].SpawnZone.Array.data[0]
       value: 
       objectReference: {fileID: 1948230861}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[1].SpawnZone.Array.data[5]
+      value: 
+      objectReference: {fileID: 2010367091}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[1].SpawnZone.Array.data[6]
+      value: 
+      objectReference: {fileID: 2010367091}
+    - target: {fileID: 114997067315872826, guid: c86857d22734b86408451ea6ce9ed4ce,
+        type: 3}
+      propertyPath: _Weapons.Array.data[1].SpawnZone.Array.data[7]
+      value: 
+      objectReference: {fileID: 2010367091}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c86857d22734b86408451ea6ce9ed4ce, type: 3}
 --- !u!1001 &1120998455
@@ -28455,6 +28471,7 @@ GameObject:
   - component: {fileID: 1750588850}
   - component: {fileID: 1750588849}
   - component: {fileID: 1750588846}
+  - component: {fileID: 1750588847}
   m_Layer: 0
   m_Name: MiniMap
   m_TagString: Untagged
@@ -28474,6 +28491,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb3679898352904d8688dcb5d684189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1750588847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750588845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!20 &1750588849
 Camera:
   m_ObjectHideFlags: 0
@@ -32806,6 +32854,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2048804255}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2049821566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2049821567}
+  - component: {fileID: 2049821568}
+  m_Layer: 0
+  m_Name: WeaponsZone (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2049821567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049821566}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 34.7, y: 0, z: -108.600006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1058883124}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2049821568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049821566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f04b96261c7cb4894f65df30ae5466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFixRandomX: 0
+  fixRandomX: 0
+  isFixRandomY: 1
+  fixRandomY: 0.3
+  isFixRandomZ: 0
+  fixRandomZ: 0
+  gizmosColor: {r: 1, g: 0.68807846, b: 0, a: 1}
+  size: {x: 23.3, y: 0, z: 20}
 --- !u!1001 &2059917101
 PrefabInstance:
   m_ObjectHideFlags: 0

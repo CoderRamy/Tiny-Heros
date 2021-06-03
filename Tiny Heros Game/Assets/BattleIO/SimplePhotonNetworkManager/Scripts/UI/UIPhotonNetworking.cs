@@ -24,7 +24,10 @@ public class UIPhotonNetworking : UIBase
     public bool autoConnect = false;
     public bool autoOpenChangeName = false;
 
-    private void OnEnable()
+  
+
+
+    private void Start()
     {
         if (dropdownRegion != null)
         {
