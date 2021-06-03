@@ -12,76 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
-  AppID: b67c97a7-70c4-482e-83a2-6bde17461d3a
+  AppID: 
   VoiceAppID: 
-  ChatAppID: 1f52de9f-8ba8-40a2-9f35-380de750c0c2
-  HostType: 1
+  ChatAppID: 
+  HostType: 0
   PreferredRegion: 0
   EnabledRegions: -1
   Protocol: 0
   ServerAddress: 
   ServerPort: 5055
   VoiceServerPort: 5055
-  JoinLobby: 1
-  EnableLobbyStatistics: 1
+  JoinLobby: 0
+  EnableLobbyStatistics: 0
   PunLogging: 0
   NetworkLogging: 1
   RunInBackground: 1
-  RpcList:
-  - Chat
-  - ColorRpc
-  - DestroyRpc
-  - DoJump
-  - Flash
-  - InstantiateRpc
-  - Marco
-  - PickupItemInit
-  - Polo
-  - PunPickup
-  - PunPickupSimple
-  - PunRespawn
-  - RequestForPickupItems
-  - RequestForPickupTimes
-  - RpcAddPlayer
-  - RpcCharacterAttack
-  - RpcCharacterSpawned
-  - RpcEffect
-  - RpcKillNotify
-  - RpcMatchStatus
-  - RpcOnCurrentCountdownChanged
-  - RpcOnSpawnerMoveCountdownChanged
-  - RpcRankResult
-  - RpcServerAddAttribute
-  - RpcServerAttack
-  - RpcServerCharacterSpawn
-  - RpcServerInit
-  - RpcServerReady
-  - RpcServerRespawn
-  - RpcServerStopAttack
-  - RpcShowChat
-  - RpcShowEmoticon
-  - RpcTargetDead
-  - RpcTargetRewardCurrency
-  - RpcTargetSpawn
-  - RpcUpdateAddStats
-  - RpcUpdateAssistCount
-  - RpcUpdateAttackingActionId
-  - RpcUpdateBotName
-  - RpcUpdateDieCount
-  - RpcUpdateExp
-  - RpcUpdateExtra
-  - RpcUpdateHp
-  - RpcUpdateIsInvincible
-  - RpcUpdateIsSpawned
-  - RpcUpdateKillCount
-  - RpcUpdateLevel
-  - RpcUpdatePrefabName
-  - RpcUpdateScore
-  - RpcUpdateScores
-  - RpcUpdateSelectCharacter
-  - RpcUpdateSelectHead
-  - RpcUpdateSelectWeapon
-  - RpcUpdateStatPoint
-  - RpcUpdateWatchAdsCount
-  - TaggedPlayer
-  DisableAutoOpenWizard: 1
+  RpcList: []
+  DisableAutoOpenWizard: 0
