@@ -55,14 +55,14 @@ public class UICharacterSelect : MonoBehaviour
         CharacterSelectorUI.SetActive(true);
         MenuUI.SetActive(false);
         CharacterHolder.transform.localScale = new Vector3(1.7f,1.7f,1.7f);
-        CharacterHolder.transform.position = new Vector3(0, -0.07f, 0);
+        CharacterHolder.transform.position = new Vector3(0, -0.07f, 89.9f);
     }
     public void CloseSelector()
     {
         CharacterSelectorUI.SetActive(false);
         MenuUI.SetActive(true);
         CharacterHolder.transform.localScale = new Vector3(1, 1, 1);
-        CharacterHolder.transform.position = new Vector3(0, 0, 0);
+        CharacterHolder.transform.position = new Vector3(0, 0, 89.9f);
     }
 
 }

@@ -153,9 +153,11 @@ MonoBehaviour:
   levelText: {fileID: 0}
   invincibleEffect: {fileID: 1316826069239968}
   weaponData: {fileID: 0}
+  WallLayer:
+    serializedVersion: 2
+    m_Bits: 4112
   updateMovementDuration: 3
   attackDuration: 0
-  randomMoveDistance: 10
   detectEnemyDistance: 3
   turnSpeed: 5
   useCustomMoveSpeed: 0
@@ -175,6 +177,7 @@ MonoBehaviour:
     addHpRecoveryRate: 0
     addDamageRateLeechHp: 0
     addSpreadDamages: 0
+  targetPosition: {x: 0, y: 0, z: 0}
   isPickupWeapon: 0
 --- !u!114 &114693187758562832
 MonoBehaviour:
@@ -268,6 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 50
   decisionRates: 0
+  TargetObject: {fileID: 0}
 --- !u!1 &1039089210694062
 GameObject:
   m_ObjectHideFlags: 0

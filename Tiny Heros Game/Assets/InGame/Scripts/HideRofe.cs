@@ -5,7 +5,7 @@ using UnityEngine;
 public class HideRofe : MonoBehaviour
 {
 
-    public GameObject roof;
+    public MeshRenderer roof;
     public float fadeSpeed;
 
      void OnTriggerEnter(Collider other)
@@ -29,7 +29,7 @@ public class HideRofe : MonoBehaviour
     {
         while(roof.GetComponent<MeshRenderer>().material.color.a < 1)
         {
-            Color ObjectColor = roof.transform.GetChild(0).GetComponent<MeshRenderer>().material.color;
+            Color ObjectColor = roof.material.color;
             float fadeAmount = ObjectColor.a + (fadeSpeed * Time.deltaTime);
             ObjectColor = new Color(ObjectColor.r, ObjectColor.g, ObjectColor.b, fadeAmount);
             roof.GetComponent<MeshRenderer>().material.color = ObjectColor;
@@ -41,7 +41,7 @@ public class HideRofe : MonoBehaviour
     {
         while (roof.GetComponent<MeshRenderer>().material.color.a > 0)
         {
-            Color ObjectColor = roof.transform.GetChild(0).GetComponent<MeshRenderer>().material.color;
+            Color ObjectColor = roof.material.color;
             float fadeAmount = ObjectColor.a - (fadeSpeed * Time.deltaTime);
             ObjectColor = new Color(ObjectColor.r, ObjectColor.g, ObjectColor.b, fadeAmount);
             roof.GetComponent<MeshRenderer>().material.color = ObjectColor;
