@@ -127,6 +127,9 @@ MonoBehaviour:
   levelText: {fileID: 0}
   invincibleEffect: {fileID: 1285848669677732}
   weaponData: {fileID: 0}
+  WallLayer:
+    serializedVersion: 2
+    m_Bits: 4112
   updateMovementDuration: 3
   attackDuration: 0
   detectEnemyDistance: 10

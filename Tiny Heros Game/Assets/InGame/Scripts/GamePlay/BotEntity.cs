@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BotEntity : CharacterEntity
 {
+    public LayerMask WallLayer;
+
     public enum Characteristic
     {
         Normal,
@@ -160,7 +162,7 @@ public class BotEntity : CharacterEntity
     protected override void OnCollisionStay(Collision collision)
     {
         base.OnCollisionStay(collision);
-        if (collision.collider.tag == "Wall")
+        if (collision.collider.gameObject.layer == WallLayer)
             isWallHit = true;
     }
 

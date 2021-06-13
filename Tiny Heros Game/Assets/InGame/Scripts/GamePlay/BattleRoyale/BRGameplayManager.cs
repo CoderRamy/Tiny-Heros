@@ -163,6 +163,8 @@ public class BRGameplayManager : GameplayManager
     private Vector3 startShrinkCenterPosition;
     private bool isInSpawnableArea;
     private BRPattern randomedPattern { get { return patterns[currentPattern]; } }
+    public Transform FROM;
+    public Transform TO;
 
     protected override void OnStartServer()
     {
@@ -175,6 +177,8 @@ public class BRGameplayManager : GameplayManager
         CurrentCountdown = 0;
         SpawnerMoveCountdown = 0;
         isInSpawnableArea = false;
+        //custom
+
         SpawnProps();
         
     }
@@ -385,6 +389,7 @@ public class BRGameplayManager : GameplayManager
 
     public Vector3 GetSpawnerPosition()
     {
+        // var interp = (spawnerMoveDuration - SpawnerMoveCountdown) / spawnerMoveDuration;
         var interp = (spawnerMoveDuration - SpawnerMoveCountdown) / spawnerMoveDuration;
         return Vector3.Lerp(spawnerMoveFrom, spawnerMoveTo, interp);
     }
