@@ -85,8 +85,6 @@ public class EquipWeapon : MonoBehaviour
             Ammo = weaponData.OriginAmmo;
         }
         
-
-
         Destroy(transform.parent.gameObject);
     }
 
