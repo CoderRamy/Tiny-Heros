@@ -62,7 +62,6 @@ public class ChestLoot : MonoBehaviour
     // Update is called once per frame
     public void StartOpenChest()
     {
-        Debug.Log("test");
         anim = GetComponent<Animator>();
         anim.SetBool("Open", true);
     }

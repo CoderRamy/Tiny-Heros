@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+
+
 [CustomEditor(typeof(ChestLoot))]
 public class ChestLootEditor : Editor
 {
