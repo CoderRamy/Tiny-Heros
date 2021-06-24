@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Knight
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
-  previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
+  previewTexture: {fileID: 2800000, guid: 769aaa6256ebbe54ca0b0036bd4bae56, type: 3}
   title: Knight
   description: Good character description often tells us about more than the person
     described.
@@ -34,3 +34,6 @@ MonoBehaviour:
     addSpreadDamages: 0
   modelObject: {fileID: 7689041918863482723, guid: 998e0e3dd19ea87489d931e7ddbbed22,
     type: 3}
+  ID: 11
+  MaxCards: 20
+  charactersRank: 0

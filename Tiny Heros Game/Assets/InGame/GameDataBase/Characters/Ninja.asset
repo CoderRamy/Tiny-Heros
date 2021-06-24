@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ninja
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
-  previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
+  previewTexture: {fileID: 2800000, guid: 5de913ba39fe3ad44bf97924f6bf2560, type: 3}
   title: Ninja
   description: Good character description often tells us about more than the person
     described.
@@ -34,3 +34,6 @@ MonoBehaviour:
     addSpreadDamages: 0
   modelObject: {fileID: -2185592555487526277, guid: 08164a5adcaef774689e6ef9795a534e,
     type: 3}
+  ID: 12
+  MaxCards: 20
+  charactersRank: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cowboy
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
-  previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
+  previewTexture: {fileID: 2800000, guid: 6984ba86434d032428737c3d9b406593, type: 3}
   title: Cowboy
   description: Good character description often tells us about more than the person
     described.
@@ -34,3 +34,6 @@ MonoBehaviour:
     addSpreadDamages: 0
   modelObject: {fileID: 272663717015919779, guid: 14bc671ef4d0d354db57ecc7efdefcaa,
     type: 3}
+  ID: 7
+  MaxCards: 20
+  charactersRank: 2

@@ -24,6 +24,9 @@ public class GameAPIManager : MonoBehaviour
     UIChangePlayerName UIChanngePlayerName;
     [SerializeField]
     UIMainMenuScene UIMainMenu;
+
+   
+
     public void Awake()
     {
         instance = this;
@@ -78,4 +81,10 @@ public class GameAPIManager : MonoBehaviour
         UIMainMenu.LoadMenu();
         Debug.Log("Player Login Loaded" + playerData.player.name);
     }
+
+    public void Restart()
+    {
+        Application.LoadLevel("Main");
+    }
+
 }

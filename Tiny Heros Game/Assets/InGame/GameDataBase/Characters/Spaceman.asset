@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Spaceman
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
-  previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
+  previewTexture: {fileID: 2800000, guid: 954896dff756c234bb14bcba7030f441, type: 3}
   title: Spaceman
   description: Good character description often tells us about more than the person
     described.
@@ -34,3 +34,6 @@ MonoBehaviour:
     addSpreadDamages: 0
   modelObject: {fileID: -6705575915244546816, guid: 22d38e3e5ad796b41890a9ea21318910,
     type: 3}
+  ID: 18
+  MaxCards: 20
+  charactersRank: 3

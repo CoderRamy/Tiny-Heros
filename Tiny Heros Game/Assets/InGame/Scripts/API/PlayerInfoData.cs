@@ -10,7 +10,6 @@ public class PlayerInfoData
 }
 
 [System.Serializable]
-
 public class Player
 {
     public int id;
@@ -23,6 +22,15 @@ public class Player
     public int gem;
     public int level;
     public float exp;
-    public string status;
+    public int status;
     public string token;
+    public Character[] characters;
+}
+
+[System.Serializable]
+public class Character
+{
+    public int id;
+    public string name;
+    public int status;
 }

@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class DataModel : MonoBehaviour {
 
-
+    void ShowApiError()
+    {
+         UINetworkClientError.Singleton.messageDialog.Show("\n Server Connection Error  \n ( APIS )");
+    }
 
     public IEnumerator DataBase_Register(string name)
     {
@@ -15,11 +18,18 @@ public class DataModel : MonoBehaviour {
         form.AddField("device_id", SystemInfo.deviceUniqueIdentifier);
         WWW www = new WWW(Env.ApiUrl + "player/register", form);
         yield return www;
+
+        //if (www.error.Length > 0)
+        //{
+        //    ShowApiError();
+        //}
+  
         string callback_data = www.text;
         Debug.Log("DataBase_Register" + callback_data);
         PlayerInfoData CallBack = new PlayerInfoData();
         CallBack = JsonUtility.FromJson<PlayerInfoData>(callback_data);
         yield return CallBack;
+       
     }
 
 
@@ -30,11 +40,18 @@ public class DataModel : MonoBehaviour {
         form.AddField("device_id", SystemInfo.deviceUniqueIdentifier);
         WWW www = new WWW(Env.ApiUrl + "player/login", form);
         yield return www;
+
+        //if(www.error.Length > 0)
+        //{
+        //    ShowApiError();
+        //}
+  
         string callback_data = www.text;
         Debug.Log("DataBase_Login" + callback_data);
         PlayerInfoData CallBack = new PlayerInfoData();
         CallBack = JsonUtility.FromJson<PlayerInfoData>(callback_data);
         yield return CallBack;
+       
     }
 
 

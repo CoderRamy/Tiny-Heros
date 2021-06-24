@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hero
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
-  previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
+  previewTexture: {fileID: 2800000, guid: 48a88e8435fbece41bce8d3c990278a6, type: 3}
   title: Hero
   description: Good character description often tells us about more than the person
     described.
@@ -34,3 +34,6 @@ MonoBehaviour:
     addSpreadDamages: 0
   modelObject: {fileID: 7420033171899818166, guid: 72183dca0aec2ed47b4bf1bd62437239,
     type: 3}
+  ID: 8
+  MaxCards: 20
+  charactersRank: 1

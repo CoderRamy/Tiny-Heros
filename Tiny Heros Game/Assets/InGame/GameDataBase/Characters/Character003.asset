@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Character003
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 0}
-  previewTexture: {fileID: 0}
+  previewTexture: {fileID: 10916, guid: 0000000000000000f000000000000000, type: 0}
   title: 
   description: Good character description often tells us about more than the person
     described.
@@ -34,3 +34,6 @@ MonoBehaviour:
     addSpreadDamages: 0
   modelObject: {fileID: 114166012597415736, guid: 7f39f525faa09cf4a87033a1c5799649,
     type: 3}
+  ID: 0
+  MaxCards: 20
+  charactersRank: 0

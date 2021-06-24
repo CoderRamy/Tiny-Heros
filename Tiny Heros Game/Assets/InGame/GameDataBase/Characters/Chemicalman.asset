@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chemicalman
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
-  previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
+  previewTexture: {fileID: 2800000, guid: 4efc2c1490e051144b59e8aa622c6e78, type: 3}
   title: Chemicalman
   description: Good character description often tells us about more than the person
     described.
@@ -23,7 +23,7 @@ MonoBehaviour:
   canBuyOnlyOnce: 1
   isLock: 0
   stats:
-    addHp: 100
+    addHp: 106
     addAttack: 10
     addDefend: 2
     addMoveSpeed: 1
@@ -34,3 +34,6 @@ MonoBehaviour:
     addSpreadDamages: 0
   modelObject: {fileID: 7947143777369989454, guid: a6a388750f2785c4ab606574c2f27cca,
     type: 3}
+  ID: 6
+  MaxCards: 20
+  charactersRank: 1

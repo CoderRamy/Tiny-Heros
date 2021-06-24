@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Veteran
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
-  previewTexture: {fileID: 2800000, guid: 4cd9fe53ba4453f40bda7bec8a4bf018, type: 3}
+  previewTexture: {fileID: 2800000, guid: 98e48e21f71bd7f41a814f94b403e472, type: 3}
   title: Veteran
   description: Good character description often tells us about more than the person
     described.
@@ -34,3 +34,6 @@ MonoBehaviour:
     addSpreadDamages: 0
   modelObject: {fileID: -2460022603583724070, guid: a70e0731e8ab56542a6795c1b8a3ba01,
     type: 3}
+  ID: 20
+  MaxCards: 20
+  charactersRank: 3
