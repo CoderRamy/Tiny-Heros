@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Weapon
+  - Health_Item
+  - Xp_Item
+  - MeleeAttackColider
   layers:
   - Default
   - TransparentFX
@@ -16,8 +20,8 @@ TagManager:
   - 
   - Character
   - Powerup
-  - 
-  - 
+  - Weapon
+  - Wall
   - 
   - 
   - 
@@ -41,4 +45,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 3448552243
+    locked: 0
+  - name: Weapon
+    uniqueID: 2933131249
+    locked: 0
+  - name: Character
+    uniqueID: 2595749683
     locked: 0
